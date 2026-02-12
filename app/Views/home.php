@@ -19,6 +19,7 @@
                                 <div class="col-xxl-8 col-xl-9 col-lg-10">
                                     <div class="rs-banner-item">
                                         <div class="rs-banner-content">
+                                            <span class="rs-section-subtitle">Introducción</span>
                                             <h1 class="rs-banner-title">DESA INGENIERÍA</h1>
                                             <div class="rs-banner-descrip">
                                                 <p>Soluciones Integrales en Construcción. Desarrollamos Ingenierías de valor para proyectos Industriales, Comerciales y Residenciales.</p>
@@ -76,6 +77,14 @@
 <!-- feature area start -->
 <section class="rs-feature-area rs-feature-one section-space-bottom">
     <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="rs-section-title-wrapper section-title-space text-center">
+                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Tecnología Aplicada</span>
+                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Tecnología Aplicada</h2>
+                </div>
+            </div>
+        </div>
         <div class="row g-5">
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="rs-feature-item wow fadeInUp" data-wow-delay=".2s">
@@ -115,8 +124,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-xl-6 col-lg-6">
                 <div class="rs-section-title-wrapper">
-                    <span class="rs-section-subtitle wow fadeInLeft" data-wow-delay=".2s">Sobre Nosotros</span>
-                    <h2 class="rs-section-title wow fadeInLeft" data-wow-delay=".4s">Calidad como forma de vida</h2>
+                    <span class="rs-section-subtitle wow fadeInLeft" data-wow-delay=".2s">Objetivos y Filosofía</span>
+                    <h2 class="rs-section-title wow fadeInLeft" data-wow-delay=".4s">Objetivos y Filosofía</h2>
                 </div>
                 <div class="rs-about-content">
                     <div class="rs-about-description">
@@ -148,7 +157,7 @@
             <div class="col-xl-12">
                 <div class="rs-section-title-wrapper section-title-space text-center">
                     <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Servicios</span>
-                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Especialidades de Ingeniería y Arquitectura</h2>
+                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Nuestros Servicios</h2>
                 </div>
             </div>
         </div>
@@ -248,8 +257,8 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="rs-section-title-wrapper section-title-space text-center">
-                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Portafolio</span>
-                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Portafolio de Proyectos</h2>
+                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Proyectos</span>
+                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Proyectos</h2>
                 </div>
             </div>
         </div>
@@ -306,7 +315,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="rs-section-title-wrapper section-title-space text-center">
-                    <h3 class="rs-section-title">Nuestros Clientes</h3>
+                    <h3 class="rs-section-title">Clientes</h3>
                 </div>
             </div>
         </div>
@@ -332,7 +341,7 @@
             <div class="col-xl-12">
                 <div class="rs-section-title-wrapper text-center">
                     <span class="rs-section-subtitle">Contacto</span>
-                    <h2 class="rs-section-title">Hablemos de tu proyecto</h2>
+                    <h2 class="rs-section-title">Contacto</h2>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
