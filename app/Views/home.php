@@ -383,58 +383,103 @@
 <!-- work step area end -->
 
 <!-- project area start -->
-<section id="portafolio" class="rs-project-area section-space-bottom rs-swiper">
+<section id="portafolio" class="rs-portfolio-area section-space-top rs-portfolio-one rs-swiper">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="rs-section-title-wrapper section-title-space text-center">
-                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Proyectos</span>
-                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Proyectos</h2>
+        <div class="row g-5 section-title-space align-items-end">
+            <div class="col-xxl-7 col-xl-8 col-lg-8">
+                <div class="rs-section-title-wrapper">
+                    <span class="rs-section-subtitle has-theme-orange justify-content-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#EA5501"></path>
+                        </svg>
+                        Proyectos
+                    </span>
+                    <h2 class="rs-section-title">Proyectos</h2>
+                </div>
+            </div>
+            <div class="col-xxl-5 col-xl-4 col-lg-4">
+                <div class="rs-portfolio-navigation">
+                    <button class="swiper-button-prev rs-swiper-btn has-bg-light"><i class="fa-regular fa-arrow-left"></i></button>
+                    <button class="swiper-button-next rs-swiper-btn has-bg-light"><i class="fa-regular fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="swiper" data-loop="true" data-speed="1200" data-autoplay="true" data-delay="3000" data-item="4" data-item-xl="4" data-item-lg="3" data-item-md="2" data-item-sm="2" data-item-xs="1" data-item-mobile="1" data-margin="24" data-margin-xl="24" data-margin-lg="24" data-margin-md="20" data-margin-sm="20" data-margin-xs="16" data-margin-mobile="16" data-dots="true">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-01.png') ?>" alt="Agencia Mercedes Benz La Rioja"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Agencia Mercedes Benz La Rioja</h4><span>Comercial / Estructural</span></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-02.png') ?>" alt="Plaza Vía Puerta de Hierro"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Plaza Vía Puerta de Hierro</h4><span>Comercial / Estructural</span></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-03.png') ?>" alt="Naves Aeropuerto"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Naves Aeropuerto</h4><span>Industrial - 64,400 m²</span></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-04.png') ?>" alt="Deportivo KIA"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Deportivo KIA</h4><span>Recreativo - Pesquería</span></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-05.png') ?>" alt="Edificio U-ERRE Campus Valle Alto"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Edificio U-ERRE Campus Valle Alto</h4><span>Educativo / Fachada</span></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="rs-project-item">
-                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-06.png') ?>" alt="Valmont Monterrey"></figure>
-                        <div class="rs-project-content"><h4 class="rs-project-title">Valmont Monterrey</h4><span>Industrial / Comedor</span></div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="rs-portfolio-slider-wrapper">
+                    <div class="swiper has-space" data-clone-slides="false" data-loop="true" data-speed="1500" data-autoplay="true" data-dots-dynamic="false" data-hover-pause="true" data-effect="false" data-delay="2500" data-item="4" data-item-xl="3" data-item-lg="3" data-item-md="2" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30" data-margin-xl="30">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-01.png') ?>" alt="Agencia Mercedes Benz La Rioja">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Comercial / Estructural</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Agencia Mercedes Benz La Rioja</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-02.png') ?>" alt="Plaza Vía Puerta de Hierro">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Comercial / Estructural</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Plaza Vía Puerta de Hierro</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-03.png') ?>" alt="Naves Aeropuerto">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Industrial - 64,400 m²</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Naves Aeropuerto</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-04.png') ?>" alt="Deportivo KIA">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Recreativo - Pesquería</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Deportivo KIA</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-05.png') ?>" alt="Edificio U-ERRE Campus Valle Alto">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Educativo / Fachada</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Edificio U-ERRE Campus Valle Alto</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-portfolio-item">
+                                    <div class="rs-portfolio-thumb has-clip-path">
+                                        <img src="<?= base_url('assets/images/project/project-06.png') ?>" alt="Valmont Monterrey">
+                                    </div>
+                                    <div class="rs-portfolio-content">
+                                        <div class="rs-portfolio-tag"><a href="#portafolio">Industrial / Comedor</a></div>
+                                        <h4 class="rs-portfolio-title underline has-white"><a href="#portafolio">Valmont Monterrey</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="rs-swiper-dot rs-project-dot"></div>
         </div>
     </div>
 </section>
