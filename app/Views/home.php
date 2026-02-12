@@ -18,26 +18,6 @@
         margin-top: 30px;
     }
 
-    .rs-work-step-area .rs-work-step-item {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .rs-work-step-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 22px;
-    }
-
-    .rs-work-step-index {
-        font-size: 64px;
-        line-height: 1;
-        font-weight: 700;
-        color: rgba(20, 20, 20, 0.08);
-    }
 </style>
 <?= $this->endSection() ?>
 
@@ -244,54 +224,61 @@
     </div>
 </section>
 
-<section id="tecnologia" class="rs-work-step-area rs-work-step-one section-space primary-bg">
-    <div class="container">
-        <div class="row g-5 section-title-space justify-content-center">
-            <div class="col-xl-8">
+<section id="tecnologia" class="rs-elements-work-process-area section-space rs-work-step-three primary-bg">
+    <div class="container has-large">
+        <div class="row g-5 justify-content-center section-title-space align-items-center">
+            <div class="col-xxl-8 col-xl-9 col-lg-9">
                 <div class="rs-section-title-wrapper text-center">
-                    <span class="rs-section-subtitle has-theme-orange">Nuestra metodología</span>
-                    <h2 class="rs-section-title">Proceso de trabajo uniforme para cada proyecto</h2>
+                    <span class="rs-section-subtitle has-theme-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#EA5501"></path>
+                        </svg>
+                        Nuestra metodología
+                    </span>
+                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Work Process Style 02</h2>
                 </div>
             </div>
         </div>
-
-        <div class="rs-work-step-wrapper">
-            <div class="row g-5 process-counts">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="rs-work-step-item">
-                        <div>
-                            <h5 class="rs-work-step-title">Objetivos y filosofía</h5>
-                            <div class="rs-work-step-top">
-                                <div class="rs-work-step-icon"><i class="ri-target-line" style="font-size:48px;"></i></div>
-                                <span class="rs-work-step-index">01</span>
-                            </div>
-                        </div>
-                        <div class="rs-work-step-descrip"><p>Crecimiento ordenado con mejora continua y enfoque en tiempo, costo y calidad.</p></div>
+        <div class="row g-5 process-counts">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="rs-work-step-item wow fadeIn" data-wow-delay=".3s">
+                    <div class="rs-work-step-number-wrapper">
+                        <span class="rs-work-step-number"></span>
+                        <span class="rs-work-step-text">step</span>
                     </div>
+                    <h5 class="rs-work-step-title">Objetivos y filosofía</h5>
+                    <p class="descrip">Crecimiento ordenado con mejora continua y enfoque en tiempo, costo y calidad.</p>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="rs-work-step-item">
-                        <div>
-                            <h5 class="rs-work-step-title">Especificaciones y normas</h5>
-                            <div class="rs-work-step-top">
-                                <div class="rs-work-step-icon"><i class="ri-shield-check-line" style="font-size:48px;"></i></div>
-                                <span class="rs-work-step-index">02</span>
-                            </div>
-                        </div>
-                        <div class="rs-work-step-descrip"><p>Diseños alineados con normas nacionales e internacionales aplicables.</p></div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="rs-work-step-item wow fadeIn" data-wow-delay=".5s">
+                    <div class="rs-work-step-number-wrapper">
+                        <span class="rs-work-step-number"></span>
+                        <span class="rs-work-step-text">step</span>
                     </div>
+                    <h5 class="rs-work-step-title">Especificaciones y normas</h5>
+                    <p class="descrip">Diseños alineados con normas nacionales e internacionales aplicables.</p>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="rs-work-step-item">
-                        <div>
-                            <h5 class="rs-work-step-title">Tecnología aplicada</h5>
-                            <div class="rs-work-step-top">
-                                <div class="rs-work-step-icon"><i class="ri-computer-line" style="font-size:48px;"></i></div>
-                                <span class="rs-work-step-index">03</span>
-                            </div>
-                        </div>
-                        <div class="rs-work-step-descrip"><p>Uso de CYPE CAD, TEKLA, Revit, STAAD Pro, ETABS, AutoCAD y más.</p></div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="rs-work-step-item wow fadeIn" data-wow-delay=".7s">
+                    <div class="rs-work-step-number-wrapper">
+                        <span class="rs-work-step-number"></span>
+                        <span class="rs-work-step-text">step</span>
                     </div>
+                    <h5 class="rs-work-step-title">Tecnología aplicada</h5>
+                    <p class="descrip">Uso de CYPE CAD, TEKLA, Revit, STAAD Pro, ETABS y AutoCAD en cada proyecto.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="rs-work-step-item wow fadeIn" data-wow-delay=".9s">
+                    <div class="rs-work-step-number-wrapper">
+                        <span class="rs-work-step-number"></span>
+                        <span class="rs-work-step-text">step</span>
+                    </div>
+                    <h5 class="rs-work-step-title">Entrega y seguimiento</h5>
+                    <p class="descrip">Entrega técnica del proyecto con acompañamiento para implementación en obra.</p>
                 </div>
             </div>
         </div>
