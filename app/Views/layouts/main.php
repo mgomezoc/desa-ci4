@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/remixicon.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
 
+    <?= $this->renderSection('head') ?>
     <?= $this->renderSection('styles') ?>
 </head>
 
