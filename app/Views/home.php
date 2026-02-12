@@ -133,15 +133,24 @@
 <!-- about area start -->
 <section class="rs-about-area section-space-bottom rs-about-one">
     <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-xl-6 col-lg-6">
+        <div class="row g-5">
+            <div class="col-xl-7 col-lg-7">
                 <div class="rs-section-title-wrapper">
-                    <span class="rs-section-subtitle wow fadeInLeft" data-wow-delay=".2s">Objetivos y Filosofía</span>
-                    <h2 class="rs-section-title wow fadeInLeft" data-wow-delay=".4s">Objetivos y Filosofía</h2>
+                    <span class="rs-section-subtitle has-theme-orange justify-content-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#EA5501"></path>
+                        </svg>
+                        Objetivos y Filosofía
+                    </span>
+                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Objetivos y Filosofía</h2>
                 </div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
                 <div class="rs-about-content">
                     <div class="rs-about-description">
-                        <p>Nuestro objetivo es que nuestros clientes se sientan con la confianza que sus proyectos se realizan de forma eficiente. Buscamos un crecimiento ordenado, implementando un sistema de mejora continua que tome en consideración las exigencias cambiantes del mercado.</p>
+                        <p class="descrip-1">Nuestro objetivo es que nuestros clientes se sientan con la confianza que sus proyectos se realizan de forma eficiente.</p>
+                        <p class="descrip-2">Buscamos un crecimiento ordenado, implementando un sistema de mejora continua que tome en consideración las exigencias cambiantes del mercado.</p>
                     </div>
                     <div class="rs-about-list wow fadeInUp" data-wow-delay=".3s">
                         <ul>
@@ -150,9 +159,19 @@
                             <li>Supervisión de Obra Civil Industrial.</li>
                         </ul>
                     </div>
+                    <div class="rs-about-btn">
+                        <a class="rs-btn has-theme-orange has-icon has-bg" href="#contacto">Contáctanos
+                            <span class="icon-box">
+                                <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6">
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
                 <div class="rs-about-thumb wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                     <div class="rs-about-bg-thumb" data-background="<?= base_url('assets/images/about/about-thumb-01.png') ?>"></div>
                 </div>
