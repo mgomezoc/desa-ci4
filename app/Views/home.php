@@ -4,18 +4,18 @@
 
 <section class="rs-banner-area rs-banner-one p-relative rs-swiper">
     <div class="rs-banner-shape">
-        <img src="<?= base_url('assets/images/shape/half-arrow.png') ?>" alt="shape">
+        <img src="<?= base_url('assets/images/shape/half-arrow.png') ?>" alt="decoración">
     </div>
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-xl-2">
                 <div class="rs-banner-meta-wrapper">
                     <div class="rs-banner-contact-item">
-                        <span>Email.</span>
+                        <span>Correo.</span>
                         <h6><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></h6>
                     </div>
                     <div class="rs-banner-contact-item">
-                        <span>Call.</span>
+                        <span>Teléfono.</span>
                         <h6><a href="tel:+528131436292">81 31 43 62 92</a></h6>
                     </div>
                 </div>
