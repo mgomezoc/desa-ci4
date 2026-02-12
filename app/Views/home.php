@@ -2,10 +2,11 @@
 
 <?= $this->section('content') ?>
 
+<main>
 <!-- banner area start -->
 <section class="rs-banner-area rs-banner-one p-relative rs-swiper">
     <div class="rs-banner-shape">
-        <img src="<?= base_url('assets/images/shape/half-arrow.png') ?>" alt="decoración">
+        <img src="<?= base_url('assets/images/shape/half-arrow.png') ?>" alt="TODO: no visible en PDF">
     </div>
     <div class="rs-banner-slider-wrapper">
         <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="1800" data-autoplay="true" data-dots-dynamic="false" data-hover-pause="true" data-effect="fade" data-delay="4500" data-item="1" data-item-xl="1" data-item-lg="1" data-item-md="1" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30" data-margin-xl="30" data-margin-lg="30" data-margin-md="30" data-margin-sm="30" data-margin-xs="30" data-margin-mobile="30">
@@ -46,7 +47,7 @@
                                 <div class="col-xxl-8 col-xl-9 col-lg-10">
                                     <div class="rs-banner-item">
                                         <div class="rs-banner-content">
-                                            <h1 class="rs-banner-title">Más de 20 años de experiencia</h1>
+                                            <h2 class="rs-banner-title">Más de 20 años de experiencia</h2>
                                             <div class="rs-banner-descrip">
                                                 <p>Empresa formada por Ingenieros y Arquitectos expertos en diseño estructural y construcción.</p>
                                             </div>
@@ -154,6 +155,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="rs-services-tab">
+                    <nav aria-label="Categorías de servicios">
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-item-one-tab" data-bs-toggle="pill" data-bs-target="#pills-item-one" type="button" role="tab" aria-controls="pills-item-one" aria-selected="true">Ingenierías Preliminares</button>
@@ -168,6 +170,7 @@
                             <button class="nav-link" id="pills-item-four-tab" data-bs-toggle="pill" data-bs-target="#pills-item-four" type="button" role="tab" aria-controls="pills-item-four" aria-selected="false">Instalaciones</button>
                         </li>
                     </ul>
+                    </nav>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-item-one" role="tabpanel" aria-labelledby="pills-item-one-tab" tabindex="0">
                             <div class="rs-services-tab-content-wrapper p-relative">
@@ -256,37 +259,37 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-01.png') ?>" alt="Agencia Mercedes Benz La Rioja"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-01.png') ?>" alt="Agencia Mercedes Benz La Rioja"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Agencia Mercedes Benz La Rioja</h4><span>Comercial / Estructural</span></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-02.png') ?>" alt="Plaza Vía Puerta de Hierro"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-02.png') ?>" alt="Plaza Vía Puerta de Hierro"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Plaza Vía Puerta de Hierro</h4><span>Comercial / Estructural</span></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-03.png') ?>" alt="Naves Aeropuerto"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-03.png') ?>" alt="Naves Aeropuerto"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Naves Aeropuerto</h4><span>Industrial - 64,400 m²</span></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-04.png') ?>" alt="Deportivo KIA"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-04.png') ?>" alt="Deportivo KIA"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Deportivo KIA</h4><span>Recreativo - Pesquería</span></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-05.png') ?>" alt="Edificio U-ERRE Campus Valle Alto"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-05.png') ?>" alt="Edificio U-ERRE Campus Valle Alto"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Edificio U-ERRE Campus Valle Alto</h4><span>Educativo / Fachada</span></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="rs-project-item">
-                        <div class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-06.png') ?>" alt="Valmont Monterrey"></div>
+                        <figure class="rs-project-thumb"><img src="<?= base_url('assets/images/project/project-06.png') ?>" alt="Valmont Monterrey"></figure>
                         <div class="rs-project-content"><h4 class="rs-project-title">Valmont Monterrey</h4><span>Industrial / Comedor</span></div>
                     </div>
                 </div>
@@ -360,5 +363,6 @@
     </div>
 </section>
 <!-- contact area end -->
+</main>
 
 <?= $this->endSection() ?>
