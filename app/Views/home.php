@@ -4,7 +4,7 @@
 
 <main>
 <!-- banner area start -->
-<section class="rs-banner-area rs-banner-one p-relative rs-swiper">
+<section id="inicio" class="rs-banner-area rs-banner-one p-relative rs-swiper">
     <div class="rs-banner-shape">
         <img src="<?= base_url('assets/images/shape/half-arrow.png') ?>" alt="TODO: no visible en PDF">
     </div>
@@ -22,7 +22,7 @@
                                             <span class="rs-section-subtitle">Introducción</span>
                                             <h1 class="rs-banner-title">DESA INGENIERÍA</h1>
                                             <div class="rs-banner-descrip">
-                                                <p>Soluciones Integrales en Construcción. Desarrollamos Ingenierías de valor para proyectos Industriales, Comerciales y Residenciales.</p>
+                                                <p>Somos una empresa formada por Ingenieros y Arquitectos con más de 20 años de experiencia.</p>
                                             </div>
                                             <div class="rs-banner-btn">
                                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="#contacto">Contáctanos
@@ -48,9 +48,9 @@
                                 <div class="col-xxl-8 col-xl-9 col-lg-10">
                                     <div class="rs-banner-item">
                                         <div class="rs-banner-content">
-                                            <h2 class="rs-banner-title">Más de 20 años de experiencia</h2>
+                                            <h2 class="rs-banner-title">Más de 20 años en ingeniería estructural</h2>
                                             <div class="rs-banner-descrip">
-                                                <p>Empresa formada por Ingenieros y Arquitectos expertos en diseño estructural y construcción.</p>
+                                                <p>Desarrollamos Ingenierías de valor para proyectos del tipo Industrial, Comercial y Residencial.</p>
                                             </div>
                                             <div class="rs-banner-btn">
                                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="#portafolio">Ver Proyectos
@@ -66,6 +66,35 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="rs-banner-item-wrapper">
+                        <div class="rs-banner-bg-thumb" data-background="<?= base_url('assets/images/bg/banner-bg-03.png') ?>"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-8 col-xl-9 col-lg-10">
+                                    <div class="rs-banner-item">
+                                        <div class="rs-banner-content">
+                                            <h2 class="rs-banner-title">Ingeniería de valor para proyectos industriales</h2>
+                                            <div class="rs-banner-descrip">
+                                                <p>Desarrollamos topografía, mecánica de suelos, instalaciones y arquitectura con enfoque en seguridad estructural, productividad y retorno de inversión.</p>
+                                            </div>
+                                            <div class="rs-banner-btn">
+                                                <a class="rs-btn has-theme-orange has-icon has-bg" href="#servicios">Conocer servicios
+                                                    <span class="icon-box">
+                                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="rs-swiper-dot rs-banner-dot"></div>
@@ -131,7 +160,7 @@
 <!-- feature area end -->
 
 <!-- about area start -->
-<section class="rs-about-area section-space-bottom rs-about-one">
+<section id="nosotros" class="rs-about-area section-space-bottom rs-about-one">
     <div class="container">
         <div class="row g-5">
             <div class="col-xl-7 col-lg-7">
@@ -182,7 +211,7 @@
 <!-- about area end -->
 
 <!-- services area start -->
-<section class="rs-services-area section-space-top rs-services-one primary-bg p-relative">
+<section id="servicios" class="rs-services-area section-space-top rs-services-one primary-bg p-relative">
     <div class="rs-services-shape">
         <img src="<?= base_url('assets/images/shape/wave-shape-01.png') ?>" alt="TODO: no visible en PDF">
     </div>
@@ -559,37 +588,82 @@
 <!-- brand area end -->
 
 <!-- contact area start -->
-<section id="contacto" class="rs-contact-area section-space-top section-space-bottom black-bg">
+<section id="contacto" class="rs-contact-area rs-contact-one section-space black-bg p-relative">
+    <div class="rs-contact-bg" data-background="<?= base_url('assets/images/bg/contact-bg-01.png') ?>"></div>
     <div class="container">
-        <div class="row g-5">
-            <div class="col-xl-12">
-                <div class="rs-section-title-wrapper text-center">
-                    <span class="rs-section-subtitle">Contacto</span>
-                    <h2 class="rs-section-title">Contacto</h2>
+        <?php if (session()->getFlashdata('success')): ?>
+            <div class="alert alert-success mb-30" role="alert"><?= esc(session()->getFlashdata('success')) ?></div>
+        <?php endif; ?>
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger mb-30" role="alert"><?= esc(session()->getFlashdata('error')) ?></div>
+        <?php endif; ?>
+        <div class="row align-items-xl-center g-5">
+            <div class="col-xl-7 col-lg-7">
+                <div class="rs-contact-wrapper">
+                    <div class="rs-section-title-wrapper">
+                        <span class="rs-section-subtitle has-theme-orange justify-content-start">Contacto</span>
+                        <h2 class="rs-section-title mb-30 rs-split-text-enable split-in-fade">Contacto</h2>
+                        <p class="descrip">Calle: Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León. C.P. 67130.</p>
+                    </div>
+                    <div class="rs-contact-list">
+                        <div class="rs-contact-list-item wow fadeIn" data-wow-delay=".3s">
+                            <div class="rs-contact-list-content">
+                                <span>Oficina</span>
+                                <h6><a href="tel:+528131436292">81 31 43 62 92</a></h6>
+                            </div>
+                        </div>
+                        <div class="rs-contact-list-item wow fadeIn" data-wow-delay=".5s">
+                            <div class="rs-contact-list-content">
+                                <span>Celular</span>
+                                <h6><a href="tel:+528115450426">81 15 45 04 26</a></h6>
+                            </div>
+                        </div>
+                        <div class="rs-contact-list-item wow fadeIn" data-wow-delay=".7s">
+                            <div class="rs-contact-list-content">
+                                <span>Correo</span>
+                                <h6><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="rs-contact-item text-center">
-                    <h5>Dirección</h5>
-                    <p>Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León. C.P. 67130.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="rs-contact-item text-center">
-                    <h5>Teléfono</h5>
-                    <p><a href="tel:+528131436292">81 31 43 62 92</a></p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="rs-contact-item text-center">
-                    <h5>Celular</h5>
-                    <p><a href="tel:+528115450426">81 15 45 04 26</a></p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="rs-contact-item text-center">
-                    <h5>Correo</h5>
-                    <p><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></p>
+            <div class="col-xl-5 col-lg-5">
+                <div class="rs-contact-form wow fadeInRight" data-wow-delay=".3s" data-wow-duration="1s">
+                    <div class="rs-contact-form-bg-thumb" data-background="<?= base_url('assets/images/bg/contact-bg-03.png') ?>"></div>
+                    <h3 class="rs-contact-form-title">Contacto</h3>
+                    <form action="<?= base_url('/') ?>" method="post">
+                        <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="rs-contact-input">
+                                    <input name="nombre" type="text" placeholder="Nombre" value="<?= old('nombre') ?>">
+                                    <?php if (isset($validation) && $validation->hasError('nombre')): ?><small class="text-danger"><?= esc($validation->getError('nombre')) ?></small><?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input">
+                                    <input name="email" type="email" placeholder="Correo" value="<?= old('email') ?>">
+                                    <?php if (isset($validation) && $validation->hasError('email')): ?><small class="text-danger"><?= esc($validation->getError('email')) ?></small><?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input">
+                                    <input name="telefono" type="text" placeholder="Teléfono" value="<?= old('telefono') ?>">
+                                    <?php if (isset($validation) && $validation->hasError('telefono')): ?><small class="text-danger"><?= esc($validation->getError('telefono')) ?></small><?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input">
+                                    <textarea name="mensaje" placeholder="Mensaje"><?= old('mensaje') ?></textarea>
+                                    <?php if (isset($validation) && $validation->hasError('mensaje')): ?><small class="text-danger"><?= esc($validation->getError('mensaje')) ?></small><?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-btn">
+                                    <button type="submit" class="rs-btn black-bg">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

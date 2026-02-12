@@ -71,7 +71,6 @@
         <div class="rs-theme-header text-center">
            <h4 class="rs-theme-header-title">Template Settings</h4>
         </div>
-        <!--  RTL SETTINGS  mb-20 -->
         <div class="rs-theme-dir">
            <label class="rs-theme-dir-main" for="rs-dir-toggler" dir="rtl">
               <span class="rs-theme-dir-rtl"> RTL</span>
