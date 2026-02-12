@@ -486,24 +486,72 @@
 <!-- project area end -->
 
 <!-- brand area start -->
-<section class="rs-brand-area section-space-bottom rs-swiper">
+<section class="rs-brand-area rs-brand-one section-space-bottom primary-bg rs-swiper">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="rs-section-title-wrapper section-title-space text-center">
-                    <h3 class="rs-section-title">Clientes</h3>
+        <div class="row g-5 section-title-space justify-content-center">
+            <div class="col-xl-7 col-lg-7">
+                <div class="rs-section-title-wrapper text-center">
+                    <span class="rs-section-subtitle has-theme-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#EA5501"></path>
+                        </svg>
+                        Clientes
+                    </span>
+                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Clientes</h2>
                 </div>
             </div>
         </div>
-        <div class="swiper" data-loop="true" data-speed="1200" data-autoplay="true" data-delay="2500" data-item="5" data-item-xl="5" data-item-lg="4" data-item-md="3" data-item-sm="2" data-item-xs="2" data-item-mobile="2" data-margin="24" data-margin-xl="24" data-margin-lg="20" data-margin-md="16" data-margin-sm="14" data-margin-xs="12" data-margin-mobile="12">
-            <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-01.png') ?>" alt="KIA"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-02.png') ?>" alt="Metalsa"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-03.png') ?>" alt="U-ERRE"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-04.png') ?>" alt="Carza"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-05.png') ?>" alt="Younchang"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-01.png') ?>" alt="Valmont"></div></div>
-                <div class="swiper-slide"><div class="rs-brand-item"><img src="<?= base_url('assets/images/brand/brand-02.png') ?>" alt="Afirme"></div></div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="rs-brand-wrapper">
+                    <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="1500" data-autoplay="false" data-dots-dynamic="false" data-center-mode="false" data-hover-pause="true" data-effect="false" data-delay="1500" data-item="6" data-item-xl="5" data-item-lg="4" data-item-md="3" data-item-sm="2" data-item-xs="2" data-item-mobile="1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-01.png') ?>" alt="Afirme">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-02.png') ?>" alt="KIA">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-03.png') ?>" alt="Metalsa">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-04.png') ?>" alt="U-ERRE">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-05.png') ?>" alt="Carza">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rs-brand-item has-clip-path">
+                                    <div class="rs-brand-thumb">
+                                        <img src="<?= base_url('assets/images/brand/brand-thumb-06.png') ?>" alt="Valmont">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
