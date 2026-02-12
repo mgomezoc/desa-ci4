@@ -59,7 +59,9 @@
                                 <li><a href="#inicio">Inicio</a></li>
                                 <li><a href="#nosotros">Nosotros</a></li>
                                 <li><a href="#servicios">Servicios</a></li>
-                                <li><a href="#portafolio">Proyectos</a></li>
+                                <li><a href="#tecnologia">Tecnología</a></li>
+                                <li><a href="#proyectos">Proyectos</a></li>
+                                <li><a href="#clientes">Clientes</a></li>
                                 <li><a href="#contacto">Contacto</a></li>
                             </ul>
                         </nav>
@@ -115,7 +117,9 @@
                                     <li><a href="#">Objetivos y Filosofía</a></li>
                                     <li><a href="#">Nuestros Servicios</a></li>
                                     <li><a href="#">Especificaciones y Normas</a></li>
-                                    <li><a href="#portafolio">Proyectos</a></li>
+                                    <li><a href="#tecnologia">Tecnología</a></li>
+                                <li><a href="#proyectos">Proyectos</a></li>
+                                <li><a href="#clientes">Clientes</a></li>
                                     <li><a href="#contacto">Contacto</a></li>
                                     <li><a href="tel:+528131436292">81 31 43 62 92</a></li>
                                     <li><a href="tel:+528115450426">81 15 45 04 26</a></li>
