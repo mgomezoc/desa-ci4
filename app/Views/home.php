@@ -211,7 +211,7 @@
             </div>
             <div class="col-xl-5 col-lg-5">
                 <div class="rs-services-btn">
-                    <a class="rs-btn has-bg-transparent has-icon has-bg" href="#contacto">Solicitar cotización
+                    <a class="rs-btn has-bg-transparent has-icon has-bg" href="#contacto">Solicitar Cotización
                         <span class="icon-box">
                             <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
                             <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
@@ -220,7 +220,36 @@
                 </div>
             </div>
         </div>
-        <div class="row"><div class="col-xl-12"><p class="text-white-50">Ingeniería estructural, preliminares, arquitectura, eléctrica e hidrosanitaria para ejecución segura y eficiente.</p></div></div>
+        <div class="row g-5">
+            <div class="col-xxl-3 col-xl-4 col-lg-4">
+                <div class="rs-services-tab">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-item-one-tab" data-bs-toggle="pill" data-bs-target="#pills-item-one" type="button" role="tab" aria-controls="pills-item-one" aria-selected="true">Ingenierías Preliminares <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-item-two-tab" data-bs-toggle="pill" data-bs-target="#pills-item-two" type="button" role="tab" aria-controls="pills-item-two" aria-selected="false">Ingeniería Estructural <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-item-three-tab" data-bs-toggle="pill" data-bs-target="#pills-item-three" type="button" role="tab" aria-controls="pills-item-three" aria-selected="false">Arquitectura <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-item-four-tab" data-bs-toggle="pill" data-bs-target="#pills-item-four" type="button" role="tab" aria-controls="pills-item-four" aria-selected="false">Instalaciones <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-9 col-xl-8 col-lg-8">
+                <div class="rs-services-tab-wrapper">
+                    <div class="tab-content rs-services-tab-anim" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-item-one" role="tabpanel" aria-labelledby="pills-item-one-tab" tabindex="0">
+                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-01.png') ?>" alt="Ingenierías Preliminares"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Ingenierías Preliminares</h3><div class="rs-services-tab-list"><ul><li>Levantamiento Topográfico</li><li>Construcciones existentes con escáner láser</li><li>Estudios de mecánica de suelos</li><li>Estudios hidrológicos</li></ul></div></div></div></div></div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-item-two" role="tabpanel" aria-labelledby="pills-item-two-tab" tabindex="0">
+                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-02.png') ?>" alt="Ingeniería Estructural"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Ingeniería Estructural</h3><div class="rs-services-tab-list"><ul><li>Diseño estructural para proyectos residenciales, comerciales e industriales</li><li>Ingeniería de detalle y maquila de planos con TEKLA</li><li>Memorias de cálculo estructural</li><li>Cimentaciones, plataformas y estructuras metálicas</li></ul></div></div></div></div></div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-item-three" role="tabpanel" aria-labelledby="pills-item-three-tab" tabindex="0">
+                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-03.png') ?>" alt="Arquitectura"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Arquitectura</h3><div class="rs-services-tab-list"><ul><li>Planos arquitectónicos: planta, elevación, cortes e isometrías</li><li>Proyectos ejecutivos</li><li>Representaciones 3D</li><li>Cuantificación y catálogos de conceptos</li></ul></div></div></div></div></div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-item-four" role="tabpanel" aria-labelledby="pills-item-four-tab" tabindex="0">
+                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-04.png') ?>" alt="Instalaciones"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Instalaciones</h3><div class="rs-services-tab-list"><ul><li>Ingeniería eléctrica: cableado, iluminación y diagramas</li><li>Ingeniería hidrosanitaria y pluvial</li><li>Memorias descriptivas y de cálculo</li><li>Planos isométricos de tuberías</li></ul></div></div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -236,7 +265,7 @@
                         </svg>
                         Nuestra metodología
                     </span>
-                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Work Process Style 02</h2>
+                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Proceso de trabajo uniforme para cada proyecto</h2>
                 </div>
             </div>
         </div>
@@ -245,7 +274,7 @@
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".3s">
                     <div class="rs-work-step-number-wrapper">
                         <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text">step</span>
+                        <span class="rs-work-step-text"></span>
                     </div>
                     <h5 class="rs-work-step-title">Objetivos y filosofía</h5>
                     <p class="descrip">Crecimiento ordenado con mejora continua y enfoque en tiempo, costo y calidad.</p>
@@ -255,7 +284,7 @@
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".5s">
                     <div class="rs-work-step-number-wrapper">
                         <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text">step</span>
+                        <span class="rs-work-step-text"></span>
                     </div>
                     <h5 class="rs-work-step-title">Especificaciones y normas</h5>
                     <p class="descrip">Diseños alineados con normas nacionales e internacionales aplicables.</p>
@@ -265,7 +294,7 @@
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".7s">
                     <div class="rs-work-step-number-wrapper">
                         <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text">step</span>
+                        <span class="rs-work-step-text"></span>
                     </div>
                     <h5 class="rs-work-step-title">Tecnología aplicada</h5>
                     <p class="descrip">Uso de CYPE CAD, TEKLA, Revit, STAAD Pro, ETABS y AutoCAD en cada proyecto.</p>
@@ -275,7 +304,7 @@
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".9s">
                     <div class="rs-work-step-number-wrapper">
                         <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text">step</span>
+                        <span class="rs-work-step-text"></span>
                     </div>
                     <h5 class="rs-work-step-title">Entrega y seguimiento</h5>
                     <p class="descrip">Entrega técnica del proyecto con acompañamiento para implementación en obra.</p>
