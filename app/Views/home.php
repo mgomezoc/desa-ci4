@@ -75,40 +75,52 @@
 <!-- banner area end -->
 
 <!-- feature area start -->
-<section class="rs-feature-area rs-feature-one section-space-bottom">
+<section class="rs-feature-area section-space rs-feature-one">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="rs-section-title-wrapper section-title-space text-center">
-                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Tecnología Aplicada</span>
-                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Tecnología Aplicada</h2>
+        <div class="row g-5 justify-content-center section-title-space align-items-center">
+            <div class="col-xxl-7 col-xl-8 col-lg-8">
+                <div class="rs-section-title-wrapper text-center">
+                    <span class="rs-section-subtitle has-theme-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#EA5501"></path>
+                        </svg>
+                        Tecnología Aplicada
+                    </span>
+                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">Tecnología Aplicada</h2>
                 </div>
             </div>
         </div>
-        <div class="row g-5">
+        <div class="row g-5 process-counts">
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".2s">
-                    <div class="rs-feature-icon"><i class="ri-line-chart-line"></i></div>
-                    <div class="rs-feature-content">
-                        <h4 class="rs-feature-title">Eficiencia</h4>
+                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                    <div class="rs-feature-icon">
+                        <img src="<?= base_url('assets/images/icon/feature-icon-01.png') ?>" alt="Eficiencia">
+                    </div>
+                    <h5 class="rs-feature-title">Eficiencia</h5>
+                    <div class="rs-feature-descrip">
                         <p>Reducimos los tiempos de entrega contando con la última tecnología en software de ingeniería.</p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".4s">
-                    <div class="rs-feature-icon"><i class="ri-shield-check-line"></i></div>
-                    <div class="rs-feature-content">
-                        <h4 class="rs-feature-title">Ingeniería de Valor</h4>
+                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
+                    <div class="rs-feature-icon">
+                        <img src="<?= base_url('assets/images/icon/feature-icon-02.png') ?>" alt="Ingeniería de Valor">
+                    </div>
+                    <h5 class="rs-feature-title">Ingeniería de Valor</h5>
+                    <div class="rs-feature-descrip">
                         <p>Proyectos eficientes e ingeniosos tomando en cuenta la seguridad e integridad.</p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".6s">
-                    <div class="rs-feature-icon"><i class="ri-cpu-line"></i></div>
-                    <div class="rs-feature-content">
-                        <h4 class="rs-feature-title">Tecnología Avanzada</h4>
+                <div class="rs-feature-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                    <div class="rs-feature-icon">
+                        <img src="<?= base_url('assets/images/icon/feature-icon-03.png') ?>" alt="Tecnología Avanzada">
+                    </div>
+                    <h5 class="rs-feature-title">Tecnología Avanzada</h5>
+                    <div class="rs-feature-descrip">
                         <p>Implementamos CypeCAD, TEKLA Structures, REVIT y Escáner Láser 3D.</p>
                     </div>
                 </div>
