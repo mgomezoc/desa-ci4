@@ -44,6 +44,38 @@
 
     <header>
         <div class="rs-header-area rs-header-one rs-sticky-header" id="rs-sticky-header">
+            <div class="container-fluid g-0">
+                <div class="rs-header-inner">
+                    <div class="rs-header-left">
+                        <div class="rs-header-logo-wrapper">
+                            <div class="rs-header-logo">
+                                <a href="<?= base_url('/') ?>"><img src="<?= base_url('assets/images/logo/logo-orange.png') ?>" alt="DESA Ingeniería"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rs-header-menu">
+                        <nav id="mobile-menu" class="main-menu">
+                            <ul class="multipage-menu">
+                                <li><a href="#inicio">Inicio</a></li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="#servicios">Servicios</a></li>
+                                <li><a href="#portafolio">Proyectos</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="rs-header-right">
+                        <div class="rs-header-btn">
+                            <a class="rs-btn has-theme-orange has-icon has-bg" href="#contacto">Solicitar propuesta
+                                <span class="icon-box">
+                                    <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                    <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
