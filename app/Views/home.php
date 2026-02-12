@@ -334,36 +334,47 @@
 <!-- services area end -->
 
 <!-- work step area start -->
-<section class="rs-work-step-area section-space-top section-space-bottom">
+<section class="rs-work-step-area rs-work-step-one section-space-bottom primary-bg">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <div class="rs-section-title-wrapper section-title-space text-center">
-                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Normatividad</span>
-                    <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Especificaciones y Normas</h2>
-                </div>
+                <h2 class="rs-work-step-section-title">Especificaciones y Normas</h2>
             </div>
         </div>
-        <div class="row g-5">
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".2s">
-                    <div class="rs-work-step-count">01</div>
-                    <h4 class="rs-work-step-title">AISC / IMCA</h4>
-                    <p>American Institute of Steel Construction &amp; Instituto Mexicano de la Construcción en Acero.</p>
+        <div class="rs-work-step-wrapper">
+            <div class="row g-5 process-counts">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                        <h5 class="rs-work-step-title">AISC / IMCA</h5>
+                        <div class="rs-work-step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="512" viewBox="0 0 512 512" width="512"><path d="m246.222 279.354v-210.019c0-4.418-3.582-8-8-8-59.12 0-114.701 23.022-156.505 64.827s-64.827 97.386-64.827 156.506 23.023 114.701 64.827 156.505 97.385 64.827 156.505 64.827 114.702-23.023 156.505-64.827c3.124-3.124 3.124-8.189 0-11.313zm-8 208.646c-113.221 0-205.333-92.112-205.333-205.333 0-110.54 87.808-200.958 197.333-205.179v205.179c0 2.122.843 4.157 2.343 5.657l145.084 145.084c-38.055 35.266-87.255 54.592-139.427 54.592zm248.889-231.111h-213.333c-3.236 0-6.153 1.949-7.391 4.938s-.554 6.43 1.734 8.718l150.849 150.85c1.562 1.562 3.609 2.343 5.657 2.343s4.095-.781 5.657-2.343c41.804-41.804 64.827-97.385 64.827-156.505 0-4.419-3.582-8.001-8-8.001zm-62.591 147.428-131.428-131.428h185.867c-1.872 49.188-20.982 95.324-54.439 131.428zm-150.742-166.984h213.333c4.418 0 8-3.582 8-8 0-59.12-23.022-114.702-64.827-156.506s-97.386-64.827-156.506-64.827c-4.418 0-8 3.582-8 8v213.333c0 4.418 3.582 8 8 8zm8-213.179c106.868 4.118 193.061 90.311 197.179 197.179h-197.179z"></path></svg>
+                        </div>
+                        <div class="rs-work-step-descrip">
+                            <p>American Institute of Steel Construction &amp; Instituto Mexicano de la Construcción en Acero.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".4s">
-                    <div class="rs-work-step-count">02</div>
-                    <h4 class="rs-work-step-title">AWS / SJI</h4>
-                    <p>American Welding Society &amp; Steel Joist Institute.</p>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
+                        <h5 class="rs-work-step-title">AWS / SJI</h5>
+                        <div class="rs-work-step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path clip-rule="evenodd" d="m193.99 213.76c17.27 0 31.32-14.05 31.32-31.32s-14.05-31.32-31.32-31.32-31.32 14.05-31.32 31.32 14.05 31.32 31.32 31.32zm0-52.64c11.75 0 21.32 9.56 21.32 21.32 0 11.75-9.56 21.32-21.32 21.32s-21.32-9.56-21.32-21.32c.01-11.75 9.57-21.32 21.32-21.32zm-49.53 2.36-9.43.88c-5.82.54-10.3 4.98-10.9 10.79-.52 5.03-.5 10.12.06 15.15.65 5.81 5.17 10.21 10.99 10.71l9.44.8c.69.06 1.02.49 1.16.84s.23.88-.22 1.42l-6.05 7.28c-3.73 4.5-3.76 10.8-.08 15.34 3.19 3.93 6.81 7.52 10.77 10.68 4.56 3.64 10.87 3.56 15.33-.21l7.24-6.1c.53-.45 1.06-.37 1.41-.23s.78.46.85 1.16l.88 9.43c.54 5.82 4.98 10.3 10.79 10.9 2.42.25 4.86.38 7.3.38 2.62 0 5.24-.15 7.85-.43 5.81-.65 10.21-5.17 10.71-10.99l.8-9.44c.06-.7.49-1.02.84-1.16s.88-.23 1.42.22l7.29 6.05c4.5 3.73 10.8 3.77 15.34.08 3.93-3.19 7.52-6.81 10.68-10.77 3.64-4.56 3.56-10.87-.21-15.33l-6.1-7.24c-.45-.53-.37-1.06-.23-1.41s.46-.78 1.16-.85l9.43-.88c5.82-.54 10.3-4.98 10.9-10.79.52-5.03.5-10.12-.06-15.15-.65-5.81-5.17-10.21-10.99-10.71l-9.44-.8c-.7-.06-1.02-.49-1.16-.84-.15-.35-.23-.88.22-1.42l6.05-7.29c3.73-4.5 3.77-10.8.08-15.34-3.19-3.93-6.81-7.52-10.77-10.68-4.56-3.64-10.87-3.56-15.33.21l-7.24 6.1c-.53.45-1.06.38-1.41.23-.35-.14-.78-.46-.85-1.16l-.88-9.43c-.54-5.82-4.98-10.3-10.79-10.9-5.03-.52-10.12-.5-15.15.06-5.81.65-10.21 5.17-10.7 10.99l-.8 9.44c-.06.7-.49 1.02-.84 1.16-.35.15-.88.23-1.42-.22l-7.29-6.05c-4.5-3.73-10.8-3.76-15.34-.08-3.93 3.19-7.52 6.81-10.68 10.77-3.64 4.57-3.56 10.87.21 15.33l6.1 7.24c.45.53.37 1.06.23 1.41-.15.35-.47.78-1.17.85z" fill-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="rs-work-step-descrip">
+                            <p>American Welding Society &amp; Steel Joist Institute.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".6s">
-                    <div class="rs-work-step-count">03</div>
-                    <h4 class="rs-work-step-title">Reglamentos Locales</h4>
-                    <p>NTC CDMX 2017, CFE y Normas Oficiales Mexicanas (NOM).</p>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                        <h5 class="rs-work-step-title">Reglamentos Locales</h5>
+                        <div class="rs-work-step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g data-name="23 Computer repair" id="_23_Computer_repair"><g><path d="M25,23a1,1,0,0,0-1,1V46H2V36H21a1,1,0,0,0,0-2H2V24H12a1,1,0,0,0,0-2H2V13a1,1,0,0,1,1-1h8a1,1,0,0,0,0-2H3a3,3,0,0,0-3,3V55a1,1,0,0,0,2,0V48H24V61a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V59a1,1,0,0,0-2,0v2a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3V24A1,1,0,0,0,25,23Z"></path><path d="M61,21H29a1,1,0,0,0,0,2H61a1,1,0,0,1,1,1V47H29a1,1,0,0,0,0,2H62v3a1,1,0,0,1-1,1H29a1,1,0,0,0,0,2H40.613l-1.561,4.684A1,1,0,0,0,40,61h8a1,1,0,0,0,.948-1.316L47.387,55H61a3,3,0,0,0,3-3V24A3,3,0,0,0,61,21ZM46.612,59H41.388l1.332-4h2.56Z"></path><path d="M42,39a1,1,0,0,0,.707-.293l7-7a1,1,0,0,0-1.414-1.414L42,36.586l-2.293-2.293a1,1,0,0,0-1.414,1.414l3,3A1,1,0,0,0,42,39Z"></path></g></g></svg>
+                        </div>
+                        <div class="rs-work-step-descrip">
+                            <p>NTC CDMX 2017, CFE y Normas Oficiales Mexicanas (NOM).</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
