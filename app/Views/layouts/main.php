@@ -52,6 +52,71 @@
     </main>
 
     <footer class="rs-footer-area rs-footer-one black-bg">
+        <div class="rs-footer-bg-thumb" data-background="<?= base_url('assets/images/bg/footer-bg-01.png') ?>"></div>
+        <div class="container">
+            <div class="rs-footer-wrapper">
+                <div class="rs-footer-item">
+                    <div class="rs-footer-widget footer-1-col-1">
+                        <div class="rs-footer-widget-logo">
+                            <a href="<?= base_url('/') ?>"><img src="<?= base_url('assets/images/logo/logo-orange-white.png') ?>" alt="DESA Ingeniería"></a>
+                        </div>
+                        <div class="rs-footer-widget-content">
+                            <p class="rs-footer-widget-description">
+                                Soluciones Integrales en Construcción. Desarrollamos Ingenierías de valor para proyectos Industriales, Comerciales y Residenciales.
+                            </p>
+                            <div class="rs-footer-widget-stroke-text">
+                                <h3 class="rs-footer-stroke-text">Más de 20 años</h3>
+                            </div>
+                            <div class="rs-footer-copyright underline">
+                                <p>© <span id="year"></span> DESA Ingeniería. Sitio web: <a href="https://www.desaingenieria.com" target="_blank" rel="noopener">www.desaingenieria.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-footer-item">
+                    <div class="rs-footer-widget footer-1-col-2">
+                        <h5 class="rs-footer-widget-title">Enlaces</h5>
+                        <div class="rs-footer-widget-content">
+                            <div class="rs-footer-widget-links">
+                                <ul>
+                                    <li><a href="#">Introducción</a></li>
+                                    <li><a href="#">Objetivos y Filosofía</a></li>
+                                    <li><a href="#">Nuestros Servicios</a></li>
+                                    <li><a href="#">Especificaciones y Normas</a></li>
+                                    <li><a href="#portafolio">Proyectos</a></li>
+                                    <li><a href="#contacto">Contacto</a></li>
+                                    <li><a href="tel:+528131436292">81 31 43 62 92</a></li>
+                                    <li><a href="tel:+528115450426">81 15 45 04 26</a></li>
+                                    <li><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></li>
+                                    <li><a href="#contacto">Av. Miguel Alemán #106-1, Guadalupe, Nuevo León</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-footer-item">
+                    <div class="rs-footer-widget footer-1-col-3">
+                        <h5 class="rs-footer-widget-title">Contacto</h5>
+                        <div class="rs-footer-widget-content">
+                            <p class="descrip">Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León. C.P. 67130.</p>
+                            <form action="#contacto">
+                                <div class="rs-footer-subscribe-input">
+                                    <input type="email" placeholder="proyectos@desaingenieria.com" aria-label="Correo DESA Ingeniería">
+                                </div>
+                            </form>
+                            <div class="rs-footer-btn">
+                                <a class="rs-btn has-theme-orange has-icon has-bg" href="#contacto">Ir a contacto
+                                    <span class="icon-box">
+                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <div class="backtotop-wrap cursor-pointer">
