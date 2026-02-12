@@ -152,57 +152,146 @@
 
 <!-- services area start -->
 <section class="rs-services-area section-space-top rs-services-one primary-bg p-relative">
+    <div class="rs-services-shape">
+        <img src="<?= base_url('assets/images/shape/wave-shape-01.png') ?>" alt="TODO: no visible en PDF">
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="rs-section-title-wrapper section-title-space text-center">
-                    <span class="rs-section-subtitle wow fadeInUp" data-wow-delay=".2s">Servicios</span>
+        <div class="row g-5 section-title-space align-items-center">
+            <div class="col-xl-7 col-lg-7">
+                <div class="rs-section-title-wrapper">
+                    <span class="rs-section-subtitle has-theme-orange justify-content-start">Nuestros Servicios</span>
                     <h2 class="rs-section-title wow fadeInUp" data-wow-delay=".4s">Nuestros Servicios</h2>
                 </div>
             </div>
+            <div class="col-xl-5 col-lg-5">
+                <div class="rs-services-btn">
+                    <a class="rs-btn has-bg-transparent has-icon has-bg" href="#contacto">Contacto
+                        <span class="icon-box">
+                            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12">
+        <div class="row g-5">
+            <div class="col-xxl-3 col-xl-4 col-lg-4">
                 <div class="rs-services-tab">
                     <nav aria-label="Categorías de servicios">
-                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-item-one-tab" data-bs-toggle="pill" data-bs-target="#pills-item-one" type="button" role="tab" aria-controls="pills-item-one" aria-selected="true">Ingenierías Preliminares</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-item-two-tab" data-bs-toggle="pill" data-bs-target="#pills-item-two" type="button" role="tab" aria-controls="pills-item-two" aria-selected="false">Ingeniería Estructural</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-item-three-tab" data-bs-toggle="pill" data-bs-target="#pills-item-three" type="button" role="tab" aria-controls="pills-item-three" aria-selected="false">Arquitectura</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-item-four-tab" data-bs-toggle="pill" data-bs-target="#pills-item-four" type="button" role="tab" aria-controls="pills-item-four" aria-selected="false">Instalaciones</button>
-                        </li>
-                    </ul>
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-item-one-tab" data-bs-toggle="pill" data-bs-target="#pills-item-one" type="button" role="tab" aria-controls="pills-item-one" aria-selected="true">Ingenierías Preliminares <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-item-two-tab" data-bs-toggle="pill" data-bs-target="#pills-item-two" type="button" role="tab" aria-controls="pills-item-two" aria-selected="false">Ingeniería Estructural <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-item-three-tab" data-bs-toggle="pill" data-bs-target="#pills-item-three" type="button" role="tab" aria-controls="pills-item-three" aria-selected="false">Arquitectura <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-item-four-tab" data-bs-toggle="pill" data-bs-target="#pills-item-four" type="button" role="tab" aria-controls="pills-item-four" aria-selected="false">Instalaciones <span class="rs-services-icon"><i class="ri-arrow-right-line"></i></span></button>
+                            </li>
+                        </ul>
                     </nav>
-                    <div class="tab-content" id="pills-tabContent">
+                </div>
+            </div>
+            <div class="col-xxl-9 col-xl-8 col-lg-8">
+                <div class="rs-services-tab-wrapper">
+                    <div class="tab-content rs-services-tab-anim" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-item-one" role="tabpanel" aria-labelledby="pills-item-one-tab" tabindex="0">
                             <div class="rs-services-tab-content-wrapper p-relative">
-                                <h3 class="rs-services-tab-title">Ingenierías Preliminares</h3>
-                                <p>Levantamiento Topográfico, Construcciones Existentes con Escáner Láser, Estudios de mecánica de suelos, Estudios hidrológicos.</p>
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip">
+                                            <img src="<?= base_url('assets/images/services/services-thumb-01.png') ?>" alt="Ingenierías Preliminares">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Ingenierías Preliminares</h3>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Levantamiento Topográfico</li>
+                                                    <li>Construcciones Existentes con Escáner Láser</li>
+                                                    <li>Estudios de mecánica de suelos</li>
+                                                    <li>Estudios hidrológicos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-two" role="tabpanel" aria-labelledby="pills-item-two-tab" tabindex="0">
                             <div class="rs-services-tab-content-wrapper p-relative">
-                                <h3 class="rs-services-tab-title">Ingeniería Estructural</h3>
-                                <p>Diseño de naves industriales, Edificios multiniveles, Cimentaciones de equipos y prensas, Maquila de planos con TEKLA Structures.</p>
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip">
+                                            <img src="<?= base_url('assets/images/services/services-thumb-02.png') ?>" alt="Ingeniería Estructural">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Ingeniería Estructural</h3>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Diseño de naves industriales</li>
+                                                    <li>Edificios multiniveles</li>
+                                                    <li>Cimentaciones de equipos y prensas</li>
+                                                    <li>Maquila de planos con TEKLA Structures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-three" role="tabpanel" aria-labelledby="pills-item-three-tab" tabindex="0">
                             <div class="rs-services-tab-content-wrapper p-relative">
-                                <h3 class="rs-services-tab-title">Arquitectura</h3>
-                                <p>Planos Arquitectónicos, Proyectos Ejecutivos, Renders 3D, Recorridos virtuales, Catálogo de Conceptos.</p>
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip">
+                                            <img src="<?= base_url('assets/images/services/services-thumb-03.png') ?>" alt="Arquitectura">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Arquitectura</h3>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Planos Arquitectónicos</li>
+                                                    <li>Proyectos Ejecutivos</li>
+                                                    <li>Renders 3D</li>
+                                                    <li>Recorridos virtuales</li>
+                                                    <li>Catálogo de Conceptos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-four" role="tabpanel" aria-labelledby="pills-item-four-tab" tabindex="0">
                             <div class="rs-services-tab-content-wrapper p-relative">
-                                <h3 class="rs-services-tab-title">Instalaciones</h3>
-                                <p>Ingeniería Eléctrica (Media y baja tensión), Ingeniería Hidrosanitaria (Pluvial, Sanitario), Sistemas contra incendio.</p>
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip">
+                                            <img src="<?= base_url('assets/images/services/services-thumb-04.png') ?>" alt="Instalaciones">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Instalaciones</h3>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Ingeniería Eléctrica (Media y baja tensión)</li>
+                                                    <li>Ingeniería Hidrosanitaria (Pluvial, Sanitario)</li>
+                                                    <li>Sistemas contra incendio</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
