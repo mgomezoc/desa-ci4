@@ -330,7 +330,8 @@
         <div class="row g-5 section-title-space align-items-end">
             <div class="col-xxl-7 col-xl-8 col-lg-8">
                 <div class="rs-section-title-wrapper">
-                                                        <?php foreach (($home_projects ?? []) as $index => $project): ?>
+
+                            <?php foreach (($home_projects ?? []) as $index => $project): ?>
                                     $thumbClass = $index === 0 ? 'rs-portfolio-thumb' : 'rs-portfolio-thumb has-clip-path';
                                         <div class="<?= $thumbClass ?>">
                 </div>
