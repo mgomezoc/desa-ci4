@@ -35,8 +35,27 @@
             padding: 120px 0 90px;
         }
 
+
+        header .rs-header-area.rs-header-one:not(.rs-sticky-header) .rs-header-menu {
+            display: none;
+        }
+
+        header .rs-header-area.rs-header-one:not(.rs-sticky-header) .rs-header-inner {
+            justify-content: space-between;
+            padding-inline-end: 12px;
+        }
+
+        header .rs-header-area.rs-header-one:not(.rs-sticky-header) .rs-header-logo-wrapper {
+            width: 188px;
+            height: 76px;
+        }
+
+        header .rs-header-area.rs-header-one:not(.rs-sticky-header) .rs-header-right {
+            gap: 12px;
+        }
+
         #inicio .rs-banner-title {
-            font-size: 38px;
+            font-size: 36px;
             line-height: 1.15;
             margin-bottom: 12px;
         }
