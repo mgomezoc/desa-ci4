@@ -59,7 +59,7 @@
                             <ul class="multipage-menu">
                                 <li><a href="<?= base_url('/') ?>">Inicio</a></li>
                                 <li><a href="<?= base_url('/#nosotros') ?>">Nosotros</a></li>
-                                <li><a href="<?= base_url('/servicios/ingenieria-estructural') ?>">Servicios</a></li>
+                                <li><a href="<?= base_url('/servicios') ?>">Servicios</a></li>
                                 <li><a href="<?= base_url('/#tecnologia') ?>">Tecnología</a></li>
                                     <li><a href="<?= base_url('/proyectos') ?>">Proyectos</a></li>
                                     <li><a href="<?= base_url('/#clientes') ?>">Clientes</a></li>
@@ -116,7 +116,7 @@
                                 <ul>
                                     <li><a href="#">Introducción</a></li>
                                     <li><a href="#">Objetivos y Filosofía</a></li>
-                                    <li><a href="<?= base_url('/servicios/ingenieria-estructural') ?>">Nuestros Servicios</a></li>
+                                    <li><a href="<?= base_url('/servicios') ?>">Nuestros Servicios</a></li>
                                     <li><a href="#">Especificaciones y Normas</a></li>
                                     <li><a href="<?= base_url('/#tecnologia') ?>">Tecnología</a></li>
                                     <li><a href="<?= base_url('/proyectos') ?>">Proyectos</a></li>

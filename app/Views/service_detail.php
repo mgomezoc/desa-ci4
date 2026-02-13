@@ -76,7 +76,7 @@
                         <nav>
                             <ul>
                                 <li><span><a href="<?= base_url('/') ?>">Home</a></span></li>
-                                <li><span><a href="<?= base_url('/servicios/ingenieria-estructural') ?>">Servicios</a></span></li>
+                                <li><span><a href="<?= base_url('/servicios') ?>">Servicios</a></span></li>
                                 <li><span><?= esc($service['name']) ?></span></li>
                             </ul>
                         </nav>

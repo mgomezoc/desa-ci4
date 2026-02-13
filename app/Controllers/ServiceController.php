@@ -33,4 +33,15 @@ class ServiceController extends BaseController
 
         return view('service_detail', $data);
     }
+
+    public function index(): string
+    {
+        $services = $this->contentService->getServices();
+
+        return view('services_index', [
+            'meta_title' => 'Servicios de Ingeniería | DESA Ingeniería',
+            'meta_desc' => 'Conoce todos los servicios de ingeniería y arquitectura de DESA Ingeniería.',
+            'services' => $services,
+        ]);
+    }
 }

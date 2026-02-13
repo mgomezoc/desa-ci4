@@ -63,6 +63,18 @@ class WebsiteContentService
         ];
     }
 
+    public function getServices(): array
+    {
+        return $this->serviceModel
+            ->select('services.*, p.title AS page_title, p.slug AS page_slug, sm.meta_title, sm.meta_description')
+            ->join('pages p', 'p.id = services.page_id', 'left')
+            ->join('seo_meta sm', 'sm.page_id = p.id', 'left')
+            ->where('services.is_visible', 1)
+            ->where('services.service_status', 'active')
+            ->orderBy('services.name', 'ASC')
+            ->findAll();
+    }
+
 
     public function getProjectCategories(): array
     {
