@@ -29,6 +29,33 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/remixicon.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/main.css') ?>">
 
+    <style>
+        @media (max-width: 767px) {
+            .rs-footer-one .rs-footer-widget-links ul {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .rs-footer-one .rs-footer-widget-links ul li a,
+            .rs-footer-one .descrip,
+            .rs-footer-one .rs-footer-copyright p {
+                overflow-wrap: anywhere;
+                word-break: break-word;
+            }
+
+            .rs-breadcrumb-one .rs-breadcrumb-title {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .rs-breadcrumb-one .rs-breadcrumb-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+
     <?= $this->renderSection('head') ?>
     <?= $this->renderSection('styles') ?>
 </head>
