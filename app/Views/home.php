@@ -319,7 +319,20 @@
         <div class="row g-5 section-title-space align-items-end">
             <div class="col-xxl-7 col-xl-8 col-lg-8">
                 <div class="rs-section-title-wrapper">
-                    <span class="rs-section-subtitle has-theme-orange justify-content-start">Proyectos</span>
+                            <?php if (empty($home_projects ?? [])): ?>
+                                <div class="swiper-slide">
+                                    <div class="rs-portfolio-item">
+                                        <div class="rs-portfolio-thumb">
+                                            <img src="<?= base_url('assets/images/portfolio/portfolio-thumb-41.png') ?>" alt="Sin proyectos">
+                                        </div>
+                                        <div class="rs-portfolio-content">
+                                            <div class="rs-portfolio-tag"><span>DESA Ingeniería</span></div>
+                                            <h4 class="rs-portfolio-title underline has-white">Próximamente más proyectos</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                                        <div class="rs-portfolio-thumb">
                     <h2 class="rs-section-title">Portafolio de proyectos</h2>
                 </div>
             </div>
