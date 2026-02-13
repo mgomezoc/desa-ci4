@@ -467,4 +467,5 @@
     </div>
 </section>
 
+<!-- End contact/home content -->
 <?= $this->endSection() ?>
