@@ -36,8 +36,8 @@
         }
 
         #inicio .rs-banner-title {
-            font-size: 56px;
-            line-height: 1.1;
+            font-size: 38px;
+            line-height: 1.15;
             margin-bottom: 12px;
         }
 
@@ -56,22 +56,11 @@
             justify-content: center;
         }
 
-        .rs-footer-one .rs-footer-widget-links ul {
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-
-        .rs-footer-one .rs-footer-widget-links ul li a,
-        .rs-footer-one .descrip,
-        .rs-footer-one .rs-footer-copyright p {
-            overflow-wrap: anywhere;
-            word-break: break-word;
-        }
     }
 
     @media (max-width: 420px) {
         #inicio .rs-banner-title {
-            font-size: 48px;
+            font-size: 32px;
         }
     }
 </style>
