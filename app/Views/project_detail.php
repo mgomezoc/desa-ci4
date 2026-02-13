@@ -4,7 +4,6 @@
 <style>
     .project-breadcrumb-fix { padding-top: 140px; }
     .rs-portfolio-details-thumb img { width: 100%; height: 420px; object-fit: cover; }
-    .rs-postbox-quote blockquote { background: #f6f6f6; border-left: 4px solid #ea5501; padding: 24px; }
     .rs-sidebar-wrapper .sidebar-widget-client-item { display: flex; gap: 14px; margin-bottom: 16px; }
     .rs-sidebar-wrapper .sidebar-widget-icon { width: 32px; }
     .related-project-thumb img { width: 100%; height: 180px; object-fit: cover; }
@@ -26,9 +25,9 @@
                     <div class="rs-breadcrumb-menu">
                         <nav>
                             <ul>
-                                <li><span><a href="<?= base_url('/') ?>">Home</a></span></li>
-                                <li><span><a href="<?= base_url('/proyectos') ?>">Portfolio</a></span></li>
-                                <li><span>Portfolio Details</span></li>
+                                <li><span><a href="<?= base_url('/') ?>">Inicio</a></span></li>
+                                <li><span><a href="<?= base_url('/proyectos') ?>">Proyectos</a></span></li>
+                                <li><span>Detalle del proyecto</span></li>
                             </ul>
                         </nav>
                     </div>
@@ -46,22 +45,15 @@
             <div class="col-xl-8 col-lg-8">
                 <div class="rs-portfolio-details-wrapper">
                     <div class="rs-portfolio-details-thumb mb-40">
-                        <img src="<?= base_url($project['cover_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-01.png') ?>" alt="<?= esc($project['name']) ?>">
+                        <img src="<?= base_url($project['primary_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-01.png') ?>" alt="<?= esc($project['name']) ?>">
                     </div>
                     <div class="rs-portfolio-details-content">
                         <h3 class="rs-portfolio-details-title"><?= esc($project['name']) ?></h3>
                         <p class="description"><?= esc($project['short_description'] ?? '') ?></p>
                         <p>Proyecto desarrollado por DESA Ingeniería con enfoque en planeación, ingeniería de detalle y control de calidad durante cada etapa.</p>
 
-                        <div class="rs-postbox-quote">
-                            <blockquote>
-                                <div class="quote-shape"><img src="<?= base_url('assets/images/shape/blockquote.png') ?>" alt="quote"></div>
-                                <p>“Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior.”</p>
-                                <cite>DESA Ingeniería</cite>
-                            </blockquote>
-                        </div>
 
-                        <h3 class="rs-portfolio-details-title">Features of Project</h3>
+                        <h3 class="rs-portfolio-details-title">Características del proyecto</h3>
                         <p class="mb-20 mt-15">Características principales implementadas durante la ejecución.</p>
                         <div class="rs-portfolio-details-feature-list mb-40">
                             <div class="rs-list-item has-theme-orange">
@@ -74,12 +66,28 @@
                                             </li>
                                         <?php endforeach; ?>
                                     <?php else: ?>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Prepare Documentation</li>
-                                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Quality Control System</li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Documentación técnica completa</li>
+                                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Sistema de control de calidad</li>
                                     <?php endif; ?>
                                 </ul>
                             </div>
                         </div>
+
+
+                        <?php if (! empty($projectGalleryImages)): ?>
+                            <h3 class="rs-portfolio-details-title">Galería del proyecto</h3>
+                            <div class="portfolio-details-thumb-wrapper mb-30">
+                                <div class="row g-4">
+                                    <?php foreach (array_slice($projectGalleryImages, 0, 6) as $galleryImage): ?>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                            <div class="rs-portfolio-details-thumb related-project-thumb">
+                                                <img src="<?= base_url($galleryImage) ?>" alt="<?= esc($project['name']) ?>">
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
 
                         <?php if (! empty($relatedProjects)): ?>
                             <div class="portfolio-details-thumb-wrapper mb-30">
@@ -88,7 +96,7 @@
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                             <div class="rs-portfolio-details-thumb related-project-thumb">
                                                 <a href="<?= base_url('/proyectos/' . $related['slug']) ?>">
-                                                    <img src="<?= base_url($related['cover_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-02.png') ?>" alt="<?= esc($related['name']) ?>">
+                                                    <img src="<?= base_url($related['primary_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-02.png') ?>" alt="<?= esc($related['name']) ?>">
                                                 </a>
                                             </div>
                                         </div>
@@ -105,20 +113,20 @@
             <div class="col-xl-4 col-lg-4">
                 <div class="rs-sidebar-wrapper rs-sidebar-sticky">
                     <div class="sidebar-widget widget-project mb-30">
-                        <h5 class="sidebar-widget-title">Project Information</h5>
+                        <h5 class="sidebar-widget-title">Información del proyecto</h5>
                         <p class="mb-0">Resumen técnico y comercial del proyecto.</p>
                         <div class="sidebar-widget-client-wrapper">
                             <div class="sidebar-widget-client-item">
                                 <div class="sidebar-widget-icon"><i class="ri-user-line"></i></div>
-                                <div class="sidebar-widget-info"><span>Client Name</span><h6><?= esc($project['client_name'] ?? 'N/D') ?></h6></div>
+                                <div class="sidebar-widget-info"><span>Cliente</span><h6><?= esc($project['client_name'] ?? 'N/D') ?></h6></div>
                             </div>
                             <div class="sidebar-widget-client-item">
                                 <div class="sidebar-widget-icon"><i class="ri-price-tag-3-line"></i></div>
-                                <div class="sidebar-widget-info"><span>Category</span><h6><?= esc($project['category_name'] ?? 'N/D') ?></h6></div>
+                                <div class="sidebar-widget-info"><span>Categoría</span><h6><?= esc($project['category_name'] ?? 'N/D') ?></h6></div>
                             </div>
                             <div class="sidebar-widget-client-item">
                                 <div class="sidebar-widget-icon"><i class="ri-map-pin-line"></i></div>
-                                <div class="sidebar-widget-info"><span>Location</span><h6><?= esc(trim(($project['city'] ?? '') . ', ' . ($project['state'] ?? ''), ', ') ?: 'N/D') ?></h6></div>
+                                <div class="sidebar-widget-info"><span>Ubicación</span><h6><?= esc(trim(($project['city'] ?? '') . ', ' . ($project['state'] ?? ''), ', ') ?: 'N/D') ?></h6></div>
                             </div>
                             <div class="sidebar-widget-client-item">
                                 <div class="sidebar-widget-icon"><i class="ri-ruler-line"></i></div>
@@ -144,9 +152,9 @@
                     <div class="sidebar-widget widget-cta mb-30">
                         <div class="sidebar-widget-cta-thumb" data-background="<?= base_url('assets/images/bg/cta-bg-09.png') ?>"></div>
                         <div class="sidebar-widget-content">
-                            <h3 class="sidebar-widget-title has-large has-border">Have a <br> project in <br> mind?</h3>
+                            <h3 class="sidebar-widget-title has-large has-border">¿Tienes un <br> proyecto en <br> mente?</h3>
                             <div class="sidebar-widget-btn">
-                                <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/#contacto') ?>">Let’s Talk
+                                <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/#contacto') ?>">Hablemos
                                     <span class="icon-box">
                                         <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
                                         <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>

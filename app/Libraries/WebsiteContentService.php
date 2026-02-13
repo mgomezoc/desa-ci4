@@ -75,8 +75,6 @@ class WebsiteContentService
             ->findAll();
     }
 
-
-
     public function getProjectDetailBySlug(string $slug): ?array
     {
         $project = $this->projectModel
@@ -94,6 +92,9 @@ class WebsiteContentService
             return null;
         }
 
+        $galleryImages = $this->extractProjectGalleryImages($project);
+        $project['primary_image'] = $project['cover_image'] ?: ($galleryImages[0] ?? null);
+
         $technologies = $this->db->table('project_technologies pt')
             ->select('t.name, t.slug, t.logo_path, t.website_url')
             ->join('technologies t', 't.id = pt.technology_id', 'inner')
@@ -103,7 +104,7 @@ class WebsiteContentService
             ->getResultArray();
 
         $relatedProjects = $this->projectModel
-            ->select('projects.id, projects.slug, projects.name, projects.cover_image, projects.city, projects.state')
+            ->select('projects.id, projects.slug, projects.name, projects.cover_image, projects.content_payload, projects.city, projects.state')
             ->where('projects.is_visible', 1)
             ->where('projects.service_status', 'active')
             ->where('projects.id !=', $project['id'])
@@ -117,7 +118,7 @@ class WebsiteContentService
 
         if (empty($relatedProjects)) {
             $relatedProjects = $this->projectModel
-                ->select('projects.id, projects.slug, projects.name, projects.cover_image, projects.city, projects.state')
+                ->select('projects.id, projects.slug, projects.name, projects.cover_image, projects.content_payload, projects.city, projects.state')
                 ->where('projects.is_visible', 1)
                 ->where('projects.service_status', 'active')
                 ->where('projects.id !=', $project['id'])
@@ -126,8 +127,14 @@ class WebsiteContentService
                 ->findAll(6);
         }
 
+        foreach ($relatedProjects as &$relatedProject) {
+            $relatedGallery = $this->extractProjectGalleryImages($relatedProject);
+            $relatedProject['primary_image'] = $relatedProject['cover_image'] ?: ($relatedGallery[0] ?? null);
+        }
+
         return [
             'project' => $project,
+            'project_gallery_images' => $galleryImages,
             'technologies' => $technologies,
             'related_projects' => $relatedProjects,
         ];
@@ -158,6 +165,34 @@ class WebsiteContentService
             $builder->where('projects.category_id', $categoryId);
         }
 
-        return $builder->findAll();
+        $projects = $builder->findAll();
+
+        foreach ($projects as &$project) {
+            $galleryImages = $this->extractProjectGalleryImages($project);
+            $project['primary_image'] = $project['cover_image'] ?: ($galleryImages[0] ?? null);
+        }
+
+        return $projects;
+    }
+
+    private function extractProjectGalleryImages(array $project): array
+    {
+        if (empty($project['content_payload']) || ! is_string($project['content_payload'])) {
+            return [];
+        }
+
+        $decodedPayload = json_decode($project['content_payload'], true);
+
+        if (! is_array($decodedPayload)) {
+            return [];
+        }
+
+        $galleryImages = $decodedPayload['gallery_images'] ?? [];
+
+        if (! is_array($galleryImages)) {
+            return [];
+        }
+
+        return array_values(array_filter($galleryImages, static fn ($imagePath): bool => is_string($imagePath) && $imagePath !== ''));
     }
 }
