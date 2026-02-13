@@ -43,11 +43,11 @@
             <div class="col-xl-3 d-none d-xl-block">
                 <div class="rs-banner-meta-wrapper">
                     <div class="rs-banner-contact-item">
-                        <span>Correo</span>
+                        <span>Correo.</span>
                         <h6><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></h6>
                     </div>
                     <div class="rs-banner-contact-item">
-                        <span>Teléfono</span>
+                        <span>Teléfono.</span>
                         <h6><a href="tel:+528131436292">81 31 43 62 92</a></h6>
                     </div>
                 </div>
