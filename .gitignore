@@ -124,3 +124,10 @@ _modules/*
 
 /results/
 /phpunit*.xml
+
+#-------------------------
+# Custom Project Folders & Backups
+#-------------------------
+ionos/
+contexto/
+desa-ci4.zip
