@@ -18,6 +18,17 @@
         margin-top: 30px;
     }
 
+    #proyectos .rs-portfolio-thumb {
+        background: #0d1328;
+    }
+
+    #proyectos .rs-portfolio-thumb img {
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+        display: block;
+    }
+
 </style>
 <?= $this->endSection() ?>
 
@@ -319,21 +330,9 @@
         <div class="row g-5 section-title-space align-items-end">
             <div class="col-xxl-7 col-xl-8 col-lg-8">
                 <div class="rs-section-title-wrapper">
-                            <?php if (empty($home_projects ?? [])): ?>
-                                <div class="swiper-slide">
-                                    <div class="rs-portfolio-item">
-                                        <div class="rs-portfolio-thumb">
-                                            <img src="<?= base_url('assets/images/portfolio/portfolio-thumb-41.png') ?>" alt="Sin proyectos">
-                                        </div>
-                                        <div class="rs-portfolio-content">
-                                            <div class="rs-portfolio-tag"><span>DESA Ingeniería</span></div>
-                                            <h4 class="rs-portfolio-title underline has-white">Próximamente más proyectos</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
-                                        <div class="rs-portfolio-thumb">
-                    <h2 class="rs-section-title">Portafolio de proyectos</h2>
+                                                        <?php foreach (($home_projects ?? []) as $index => $project): ?>
+                                    $thumbClass = $index === 0 ? 'rs-portfolio-thumb' : 'rs-portfolio-thumb has-clip-path';
+                                        <div class="<?= $thumbClass ?>">
                 </div>
             </div>
             <div class="col-xxl-5 col-xl-4 col-lg-4">
