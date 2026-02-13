@@ -2,11 +2,13 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Exceptions\PageNotFoundException;
+use Config\Mimes;
 
 class ProjectMediaController extends BaseController
 {
-    public function image(string $encodedPath)
+    public function image(string $encodedPath): ResponseInterface
     {
         $relativePath = $this->decodePath($encodedPath);
 
@@ -21,7 +23,19 @@ class ProjectMediaController extends BaseController
             throw PageNotFoundException::forPageNotFound();
         }
 
-        return $this->response->setFile($absolutePath);
+        $extension = pathinfo($absolutePath, PATHINFO_EXTENSION);
+        $mimeType = Mimes::guessTypeFromExtension($extension) ?: 'application/octet-stream';
+        $contents = file_get_contents($absolutePath);
+
+        if ($contents === false) {
+            throw PageNotFoundException::forPageNotFound();
+        }
+
+        return $this->response
+            ->setHeader('Content-Type', $mimeType)
+            ->setHeader('Content-Length', (string) filesize($absolutePath))
+            ->setCache(['max-age' => 86400, 'public' => true])
+            ->setBody($contents);
     }
 
     private function decodePath(string $encodedPath): ?string
