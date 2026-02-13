@@ -44,6 +44,7 @@ class ProjectsController extends BaseController
             'meta_desc' => $project['meta_description'] ?: ($project['short_description'] ?? ''),
             'project' => $project,
             'technologies' => $payload['technologies'] ?? [],
+            'projectGalleryImages' => $payload['project_gallery_images'] ?? [],
             'relatedProjects' => $payload['related_projects'] ?? [],
             'projects' => $this->contentService->getProjects(),
         ]);

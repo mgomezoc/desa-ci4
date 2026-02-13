@@ -336,10 +336,21 @@
                 <div class="rs-portfolio-slider-wrapper">
                     <div class="swiper has-space" data-loop="true" data-speed="1500" data-autoplay="true" data-hover-pause="true" data-delay="2500" data-item="4" data-item-xl="3" data-item-lg="3" data-item-md="2" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><div class="rs-portfolio-item"><div class="rs-portfolio-thumb"><img src="<?= base_url('assets/images/portfolio/portfolio-thumb-01.png') ?>" alt="Plaza Vía Puerta de Hierro"></div><div class="rs-portfolio-content"><div class="rs-portfolio-tag"><span>PAGA Desarrollos</span></div><h4 class="rs-portfolio-title underline has-white">Plaza Vía Puerta de Hierro</h4><p class="text-white-50">Diseño estructural de cubiertas y escaleras.</p></div></div></div>
-                            <div class="swiper-slide"><div class="rs-portfolio-item"><div class="rs-portfolio-thumb"><img src="<?= base_url('assets/images/portfolio/portfolio-thumb-02.png') ?>" alt="Agencia Mercedes Benz La Rioja"></div><div class="rs-portfolio-content"><div class="rs-portfolio-tag"><span>SIE Industrial</span></div><h4 class="rs-portfolio-title underline has-white">Agencia Mercedes Benz La Rioja</h4><p class="text-white-50">Ingeniería de estructura metálica de cubierta y mezzanine.</p></div></div></div>
-                            <div class="swiper-slide"><div class="rs-portfolio-item"><div class="rs-portfolio-thumb"><img src="<?= base_url('assets/images/portfolio/portfolio-thumb-03.png') ?>" alt="Plaza Comercial Andenes Guadalupe"></div><div class="rs-portfolio-content"><div class="rs-portfolio-tag"><span>PAGA Desarrollos</span></div><h4 class="rs-portfolio-title underline has-white">Plaza Comercial Andenes</h4><p class="text-white-50">Diseño estructural de cubierta metálica.</p></div></div></div>
-                            <div class="swiper-slide"><div class="rs-portfolio-item"><div class="rs-portfolio-thumb"><img src="<?= base_url('assets/images/portfolio/portfolio-thumb-04.png') ?>" alt="Preparatoria U-ERRE"></div><div class="rs-portfolio-content"><div class="rs-portfolio-tag"><span>U-ERRE</span></div><h4 class="rs-portfolio-title underline has-white">Preparatoria U-ERRE</h4><p class="text-white-50">Diseño estructural de fachada metálica.</p></div></div></div>
+                            <?php foreach (($home_projects ?? []) as $project): ?>
+                                <?php $image = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png'; ?>
+                                <div class="swiper-slide">
+                                    <div class="rs-portfolio-item">
+                                        <div class="rs-portfolio-thumb">
+                                            <img src="<?= base_url($image) ?>" alt="<?= esc($project['name']) ?>">
+                                        </div>
+                                        <div class="rs-portfolio-content">
+                                            <div class="rs-portfolio-tag"><span><?= esc($project['client_name'] ?? 'DESA Ingeniería') ?></span></div>
+                                            <h4 class="rs-portfolio-title underline has-white"><?= esc($project['name']) ?></h4>
+                                            <p class="text-white-50"><?= esc($project['short_description'] ?? 'Proyecto de ingeniería desarrollado por DESA Ingeniería.') ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>

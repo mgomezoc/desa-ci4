@@ -2,13 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Libraries\WebsiteContentService;
 use App\Libraries\ResendMailerService;
 
 class Home extends BaseController
 {
-    public function __construct(private ?ResendMailerService $resendMailer = null)
-    {
+    public function __construct(
+        private ?ResendMailerService $resendMailer = null,
+        private ?WebsiteContentService $contentService = null,
+    ) {
         $this->resendMailer ??= new ResendMailerService();
+        $this->contentService ??= new WebsiteContentService();
     }
 
     public function index()
@@ -18,6 +22,7 @@ class Home extends BaseController
         $data = [
             'meta_title' => 'DESA Ingeniería | Portafolio de Proyectos',
             'meta_desc'  => 'Portafolio de proyectos de DESA Ingeniería: introducción, objetivos, servicios, especificaciones y normas, tecnología aplicada, proyectos, clientes y contacto.',
+            'home_projects' => array_slice($this->contentService->getProjects(), 0, 8),
         ];
 
         if (strtolower($this->request->getMethod()) === 'post') {

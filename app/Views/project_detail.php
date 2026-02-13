@@ -46,7 +46,7 @@
             <div class="col-xl-8 col-lg-8">
                 <div class="rs-portfolio-details-wrapper">
                     <div class="rs-portfolio-details-thumb mb-40">
-                        <img src="<?= base_url($project['cover_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-01.png') ?>" alt="<?= esc($project['name']) ?>">
+                        <img src="<?= base_url($project['primary_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-01.png') ?>" alt="<?= esc($project['name']) ?>">
                     </div>
                     <div class="rs-portfolio-details-content">
                         <h3 class="rs-portfolio-details-title"><?= esc($project['name']) ?></h3>
@@ -81,6 +81,22 @@
                             </div>
                         </div>
 
+
+                        <?php if (! empty($projectGalleryImages)): ?>
+                            <h3 class="rs-portfolio-details-title">Galería del proyecto</h3>
+                            <div class="portfolio-details-thumb-wrapper mb-30">
+                                <div class="row g-4">
+                                    <?php foreach (array_slice($projectGalleryImages, 0, 6) as $galleryImage): ?>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                            <div class="rs-portfolio-details-thumb related-project-thumb">
+                                                <img src="<?= base_url($galleryImage) ?>" alt="<?= esc($project['name']) ?>">
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+
                         <?php if (! empty($relatedProjects)): ?>
                             <div class="portfolio-details-thumb-wrapper mb-30">
                                 <div class="row g-5">
@@ -88,7 +104,7 @@
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                             <div class="rs-portfolio-details-thumb related-project-thumb">
                                                 <a href="<?= base_url('/proyectos/' . $related['slug']) ?>">
-                                                    <img src="<?= base_url($related['cover_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-02.png') ?>" alt="<?= esc($related['name']) ?>">
+                                                    <img src="<?= base_url($related['primary_image'] ?: 'assets/images/portfolio/details/portfolio-details-thumb-02.png') ?>" alt="<?= esc($related['name']) ?>">
                                                 </a>
                                             </div>
                                         </div>

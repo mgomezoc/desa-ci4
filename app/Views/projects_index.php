@@ -100,7 +100,7 @@
         <div class="row g-5 process-counts">
             <?php foreach ($projects as $index => $project): ?>
                 <?php
-                    $cover = $project['cover_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png';
+                    $cover = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png';
                     $delay = ltrim(number_format(0.3 + (($index % 8) * 0.1), 1), '0');
                     $location = trim(($project['city'] ?? '') . ', ' . ($project['state'] ?? ''), ', ');
                 ?>
