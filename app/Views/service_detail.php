@@ -3,20 +3,40 @@
 <?= $this->section('head') ?>
 <link rel="canonical" href="<?= base_url('servicios/' . $service['slug']) ?>">
 <?php if (! empty($seo['schema_json'])): ?>
-<script type="application/ld+json">
-<?= is_string($seo['schema_json']) ? trim($seo['schema_json']) : '' ?>
-</script>
+    <script type="application/ld+json">
+        <?= is_string($seo['schema_json']) ? trim($seo['schema_json']) : '' ?>
+    </script>
 <?php endif; ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('styles') ?>
 <style>
-    .service-breadcrumb-fix { padding-top: 140px; }
-    .rs-services-details-thumb img { width: 100%; height: 420px; object-fit: cover; }
-    .rs-services-details-video .rs-video-bg-thumb { min-height: 280px; }
-    .rs-services-details-faq .accordion-body { color: #616161; }
-    .sidebar-widget.widget-categories-two ul li.active a { color: #ea5501; }
-    .service-cta-thumb img { max-width: 260px; width: 100%; }
+    .service-breadcrumb-fix {
+        padding-top: 140px;
+    }
+
+    .rs-services-details-thumb img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .rs-services-details-video .rs-video-bg-thumb {
+        min-height: 280px;
+    }
+
+    .rs-services-details-faq .accordion-body {
+        color: #616161;
+    }
+
+    .sidebar-widget.widget-categories-two ul li.active a {
+        color: #ea5501;
+    }
+
+    .service-cta-thumb img {
+        max-width: 260px;
+        width: 100%;
+    }
 </style>
 <?= $this->endSection() ?>
 
@@ -60,7 +80,7 @@
                     <p class="mb-25 mt-15"><strong><?= esc($service['short_description'] ?? '') ?></strong></p>
                     <p><?= esc($service['long_description'] ?? '') ?></p>
 
-                    <h3 class="rs-services-details-title">Planning &amp; Strategy</h3>
+                    <h3 class="rs-services-details-title">Planificación y Estrategia</h3>
                     <p class="mt-20 mb-20">Aplicamos procesos de ingeniería orientados a resultados, control de calidad y cumplimiento normativo.</p>
 
                     <div class="rs-services-details-feature-list">
@@ -69,35 +89,26 @@
                                 <?php if (! empty($technologies)): ?>
                                     <?php foreach ($technologies as $technology): ?>
                                         <li>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path>
+                                            </svg>
                                             <?= esc($technology['name']) ?>
                                         </li>
                                     <?php endforeach; ?>
                                 <?php else: ?>
-                                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Planeación técnica y documentación de proyecto</li>
-                                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>Control de calidad y cumplimiento normativo</li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path>
+                                        </svg>Planeación técnica y documentación de proyecto</li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path>
+                                        </svg>Control de calidad y cumplimiento normativo</li>
                                 <?php endif; ?>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="rs-services-details-video rs-video-one">
-                        <div class="rs-video-bg-thumb" data-background="<?= base_url('assets/images/bg/video-bg-06.png') ?>"></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-7 col-lg-8 col-md-10">
-                                    <div class="rs-video-content text-center">
-                                        <div class="rs-video-play-btn">
-                                            <a href="https://www.youtube.com/watch?v=go7QYaQR494" class="rs-play-btn popup-video"><i class="fa-duotone fa-play"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <p class="mb-20">Diseñamos soluciones integrales para proyectos industriales, comerciales y residenciales, priorizando seguridad, funcionalidad y tiempos de ejecución.</p>
-                    <h3 class="rs-services-details-title mb-15">Questions? You’re covered</h3>
+                    <h3 class="rs-services-details-title mb-15">¿Tienes preguntas?</h3>
                     <p>Revisa las preguntas frecuentes relacionadas con este servicio.</p>
 
                     <div class="rs-services-details-faq">
@@ -134,8 +145,12 @@
                             <div class="rs-services-details-btn">
                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/#contacto') ?>">Explorar más
                                     <span class="icon-box">
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                        </svg>
+                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -170,36 +185,16 @@
                             <div class="sidebar-widget-btn">
                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/#contacto') ?>">Hablemos
                                     <span class="icon-box">
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                        </svg>
+                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="sidebar-widget widget-download mb-30">
-                        <h5 class="mb-25 sidebar-widget-title">Descargables</h5>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="left">
-                                        <span><img src="<?= base_url('assets/images/icon/docs.svg') ?>" alt="Reporte"></span>
-                                        Brochure de servicios
-                                    </div>
-                                    <span><img src="<?= base_url('assets/images/icon/download-01.svg') ?>" alt="Descargar"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="left">
-                                        <span><img src="<?= base_url('assets/images/icon/pdf.svg') ?>" alt="PDF"></span>
-                                        Descargar PDF
-                                    </div>
-                                    <span><img src="<?= base_url('assets/images/icon/download-02.svg') ?>" alt="Descargar"></span>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
