@@ -2,6 +2,12 @@
 
 <?= $this->section('styles') ?>
 <style>
+    .rs-header-area {
+        background: #ffffff;
+        z-index: 999999;
+        position: relative;
+    }
+
     .rs-feature-one .rs-feature-item {
         height: 100%;
         display: flex;
