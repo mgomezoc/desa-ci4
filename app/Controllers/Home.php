@@ -2,8 +2,15 @@
 
 namespace App\Controllers;
 
+use App\Libraries\ResendMailerService;
+
 class Home extends BaseController
 {
+    public function __construct(private ?ResendMailerService $resendMailer = null)
+    {
+        $this->resendMailer ??= new ResendMailerService();
+    }
+
     public function index()
     {
         helper(['form', 'url']);
@@ -30,21 +37,14 @@ class Home extends BaseController
             $telefono = (string) $this->request->getPost('telefono');
             $mensaje = (string) $this->request->getPost('mensaje');
 
-            $emailService = service('email');
-            $emailService->setTo('jmedrano@desaingenieria.com');
-            $emailService->setCC('hdelarosa@desaingenieria.com');
-            $emailService->setSubject('Contacto DESA 2026 - ' . $nombre);
-            $emailService->setMailType('html');
+            $emailSent = $this->resendMailer->sendContactEmail([
+                'nombre' => $nombre,
+                'email' => $email,
+                'telefono' => $telefono,
+                'mensaje' => $mensaje,
+            ]);
 
-            $body = '<h2>Nuevo contacto DESA 2026</h2>'
-                . '<p><strong>Nombre:</strong> ' . esc($nombre) . '</p>'
-                . '<p><strong>Email:</strong> ' . esc($email) . '</p>'
-                . '<p><strong>Teléfono:</strong> ' . esc($telefono) . '</p>'
-                . '<p><strong>Mensaje:</strong><br>' . nl2br(esc($mensaje)) . '</p>';
-
-            $emailService->setMessage($body);
-
-            if ($emailService->send()) {
+            if ($emailSent) {
                 return redirect()->to(base_url('/#contacto'))->with('success', 'Tu mensaje fue enviado correctamente.');
             }
 
