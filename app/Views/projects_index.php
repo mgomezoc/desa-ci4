@@ -100,13 +100,13 @@
         <div class="row g-5 process-counts">
             <?php foreach ($projects as $index => $project): ?>
                 <?php
-                    $cover = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png';
+                    $cover = $project['primary_image_url'] ?? base_url('assets/images/portfolio/portfolio-thumb-41.png');
                     $delay = ltrim(number_format(0.3 + (($index % 8) * 0.1), 1), '0');
                     $location = trim(($project['city'] ?? '') . ', ' . ($project['state'] ?? ''), ', ');
                 ?>
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="rs-portfolio-item wow fadeInUp" data-wow-delay="<?= $delay ?>s" data-wow-duration="1s">
-                        <div class="rs-portfolio-thumb" data-background="<?= base_url($cover) ?>"></div>
+                        <div class="rs-portfolio-thumb" data-background="<?= esc($cover, 'attr') ?>"></div>
                         <div class="rs-portfolio-content">
                             <div class="rs-portfolio-number"></div>
                             <h5 class="rs-portfolio-title">
