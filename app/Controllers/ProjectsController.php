@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Libraries\WebsiteContentService;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class ProjectsController extends BaseController
 {
@@ -26,4 +27,26 @@ class ProjectsController extends BaseController
 
         return view('projects_index', $data);
     }
+
+
+    public function detail(string $slug): string
+    {
+        $payload = $this->contentService->getProjectDetailBySlug($slug);
+
+        if (! $payload) {
+            throw PageNotFoundException::forPageNotFound();
+        }
+
+        $project = $payload['project'];
+
+        return view('project_detail', [
+            'meta_title' => $project['meta_title'] ?: ($project['name'] . ' | Proyectos DESA Ingeniería'),
+            'meta_desc' => $project['meta_description'] ?: ($project['short_description'] ?? ''),
+            'project' => $project,
+            'technologies' => $payload['technologies'] ?? [],
+            'relatedProjects' => $payload['related_projects'] ?? [],
+            'projects' => $this->contentService->getProjects(),
+        ]);
+    }
+
 }
