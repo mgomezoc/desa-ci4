@@ -28,7 +28,6 @@
         object-fit: cover;
         display: block;
     }
-
 </style>
 <?= $this->endSection() ?>
 
@@ -74,8 +73,12 @@
                                             <div class="rs-banner-btn">
                                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/servicios') ?>">Nuestros servicios
                                                     <span class="icon-box">
-                                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                        </svg>
+                                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                        </svg>
                                                     </span>
                                                 </a>
                                             </div>
@@ -102,8 +105,12 @@
                                             <div class="rs-banner-btn">
                                                 <a class="rs-btn has-theme-orange has-icon has-bg" href="<?= base_url('/proyectos') ?>">Ver proyectos
                                                     <span class="icon-box">
-                                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                        </svg>
+                                                        <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                            <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                        </svg>
                                                     </span>
                                                 </a>
                                             </div>
@@ -177,8 +184,12 @@
                     <div class="rs-about-contact-btn">
                         <a class="rs-btn has-theme-orange has-icon has-bg" href="#contacto">Contáctanos
                             <span class="icon-box">
-                                <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                                <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                                <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                </svg>
+                                <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                </svg>
                             </span>
                         </a>
                     </div>
@@ -201,10 +212,34 @@
         <div class="rs-counter-wrapper">
             <div class="rs-counter-bg" data-background="<?= base_url('assets/images/bg/counter-bg-01.png') ?>"></div>
             <div class="row g-5 justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6"><div class="rs-counter-item"><div class="rs-counter-inner"><div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="20">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Años de experiencia</span></div></div></div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6"><div class="rs-counter-item"><div class="rs-counter-inner"><div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="5">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Áreas de ingeniería</span></div></div></div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6"><div class="rs-counter-item"><div class="rs-counter-inner"><div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="8">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Software especializado</span></div></div></div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6"><div class="rs-counter-item"><div class="rs-counter-inner"><div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="20">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Normas aplicadas</span></div></div></div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="rs-counter-item">
+                        <div class="rs-counter-inner">
+                            <div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="20">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Años de experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="rs-counter-item">
+                        <div class="rs-counter-inner">
+                            <div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="5">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Áreas de ingeniería</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="rs-counter-item">
+                        <div class="rs-counter-inner">
+                            <div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="8">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Software especializado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                    <div class="rs-counter-item">
+                        <div class="rs-counter-inner">
+                            <div class="rs-counter-number-wrapper"><span class="rs-counter-number odometer" data-count="20">00</span><span class="prefix">+</span></div><span class="rs-counter-title">Normas aplicadas</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -224,8 +259,12 @@
                 <div class="rs-services-btn">
                     <a class="rs-btn has-bg-transparent has-icon has-bg" href="#contacto">Solicitar Cotización
                         <span class="icon-box">
-                            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
-                            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path></svg>
+                            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                            </svg>
+                            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                            </svg>
                         </span>
                     </a>
                 </div>
@@ -246,16 +285,96 @@
                 <div class="rs-services-tab-wrapper">
                     <div class="tab-content rs-services-tab-anim" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-item-one" role="tabpanel" aria-labelledby="pills-item-one-tab" tabindex="0">
-                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-01.png') ?>" alt="Ingenierías Preliminares"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Ingenierías Preliminares</h3><p><a href="<?= base_url('/servicios/ingenierias-preliminares') ?>">Ver página del servicio</a></p><div class="rs-services-tab-list"><ul><li>Levantamiento Topográfico</li><li>Construcciones existentes con escáner láser</li><li>Estudios de mecánica de suelos</li><li>Estudios hidrológicos</li></ul></div></div></div></div></div>
+                            <div class="rs-services-tab-content-wrapper p-relative">
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-01.png') ?>" alt="Ingenierías Preliminares"></div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Ingenierías Preliminares</h3>
+                                            <p><a href="<?= base_url('/servicios/ingenierias-preliminares') ?>">Ver página del servicio</a></p>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Levantamiento Topográfico</li>
+                                                    <li>Construcciones existentes con escáner láser</li>
+                                                    <li>Estudios de mecánica de suelos</li>
+                                                    <li>Estudios hidrológicos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-two" role="tabpanel" aria-labelledby="pills-item-two-tab" tabindex="0">
-                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-02.png') ?>" alt="Ingeniería Estructural"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Ingeniería Estructural</h3><p><a href="<?= base_url('/servicios/ingenieria-estructural') ?>">Ver página del servicio</a></p><div class="rs-services-tab-list"><ul><li>Diseño estructural para proyectos residenciales, comerciales e industriales</li><li>Ingeniería de detalle y maquila de planos con TEKLA</li><li>Memorias de cálculo estructural</li><li>Cimentaciones, plataformas y estructuras metálicas</li></ul></div></div></div></div></div>
+                            <div class="rs-services-tab-content-wrapper p-relative">
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-02.png') ?>" alt="Ingeniería Estructural"></div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Ingeniería Estructural</h3>
+                                            <p><a href="<?= base_url('/servicios/ingenieria-estructural') ?>">Ver página del servicio</a></p>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Diseño estructural para proyectos residenciales, comerciales e industriales</li>
+                                                    <li>Ingeniería de detalle y maquila de planos con TEKLA</li>
+                                                    <li>Memorias de cálculo estructural</li>
+                                                    <li>Cimentaciones, plataformas y estructuras metálicas</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-three" role="tabpanel" aria-labelledby="pills-item-three-tab" tabindex="0">
-                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-03.png') ?>" alt="Arquitectura"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Arquitectura</h3><p><a href="<?= base_url('/servicios/arquitectura') ?>">Ver página del servicio</a></p><div class="rs-services-tab-list"><ul><li>Planos arquitectónicos: planta, elevación, cortes e isometrías</li><li>Proyectos ejecutivos</li><li>Representaciones 3D</li><li>Cuantificación y catálogos de conceptos</li></ul></div></div></div></div></div>
+                            <div class="rs-services-tab-content-wrapper p-relative">
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-03.png') ?>" alt="Arquitectura"></div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Arquitectura</h3>
+                                            <p><a href="<?= base_url('/servicios/arquitectura') ?>">Ver página del servicio</a></p>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Planos arquitectónicos: planta, elevación, cortes e isometrías</li>
+                                                    <li>Proyectos ejecutivos</li>
+                                                    <li>Representaciones 3D</li>
+                                                    <li>Cuantificación y catálogos de conceptos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="pills-item-four" role="tabpanel" aria-labelledby="pills-item-four-tab" tabindex="0">
-                            <div class="rs-services-tab-content-wrapper p-relative"><div class="row g-5 align-items-center"><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-04.png') ?>" alt="Instalaciones"></div></div><div class="col-xl-6 col-lg-6"><div class="rs-services-tab-content"><h3 class="rs-services-tab-title">Instalaciones</h3><p><a href="<?= base_url('/servicios/ingenieria-electrica') ?>">Ver página del servicio</a></p><div class="rs-services-tab-list"><ul><li>Ingeniería eléctrica: cableado, iluminación y diagramas</li><li>Ingeniería hidrosanitaria y pluvial</li><li>Memorias descriptivas y de cálculo</li><li>Planos isométricos de tuberías</li></ul></div></div></div></div></div>
+                            <div class="rs-services-tab-content-wrapper p-relative">
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content-thumb has-clip"><img src="<?= base_url('assets/images/services/services-thumb-04.png') ?>" alt="Instalaciones"></div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="rs-services-tab-content">
+                                            <h3 class="rs-services-tab-title">Instalaciones</h3>
+                                            <p><a href="<?= base_url('/servicios/ingenieria-electrica') ?>">Ver página del servicio</a></p>
+                                            <div class="rs-services-tab-list">
+                                                <ul>
+                                                    <li>Ingeniería eléctrica: cableado, iluminación y diagramas</li>
+                                                    <li>Ingeniería hidrosanitaria y pluvial</li>
+                                                    <li>Memorias descriptivas y de cálculo</li>
+                                                    <li>Planos isométricos de tuberías</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -330,10 +449,11 @@
         <div class="row g-5 section-title-space align-items-end">
             <div class="col-xxl-7 col-xl-8 col-lg-8">
                 <div class="rs-section-title-wrapper">
-
-                            <?php foreach (($home_projects ?? []) as $index => $project): ?>
-                                    $thumbClass = $index === 0 ? 'rs-portfolio-thumb' : 'rs-portfolio-thumb has-clip-path';
-                                        <div class="<?= $thumbClass ?>">
+                    <?php foreach (($home_projects ?? []) as $index => $project): ?>
+                        <?php $thumbClass = ($index === 0) ? 'rs-portfolio-thumb' : 'rs-portfolio-thumb has-clip-path'; ?>
+                        <div class="<?= $thumbClass ?>">
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="col-xxl-5 col-xl-4 col-lg-4">
@@ -441,9 +561,22 @@
                         <p class="descrip">Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León C.P. 67130.</p>
                     </div>
                     <div class="rs-contact-list">
-                        <div class="rs-contact-list-item"><div class="rs-contact-list-content"><span>Dirección</span><h6><a href="#">Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León C.P. 67130</a></h6></div></div>
-                        <div class="rs-contact-list-item"><div class="rs-contact-list-content"><span>Teléfonos</span><h6 class="mb-5"><a href="tel:+528131436292">Oficina: 81 31 43 62 92</a></h6><h6><a href="tel:+528115450426">Celular: 81 15 45 04 26</a></h6></div></div>
-                        <div class="rs-contact-list-item"><div class="rs-contact-list-content"><span>Correo</span><h6><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></h6></div></div>
+                        <div class="rs-contact-list-item">
+                            <div class="rs-contact-list-content"><span>Dirección</span>
+                                <h6><a href="#">Av. Miguel Alemán #106-1 Col. Libertad, Guadalupe, Nuevo León C.P. 67130</a></h6>
+                            </div>
+                        </div>
+                        <div class="rs-contact-list-item">
+                            <div class="rs-contact-list-content"><span>Teléfonos</span>
+                                <h6 class="mb-5"><a href="tel:+528131436292">Oficina: 81 31 43 62 92</a></h6>
+                                <h6><a href="tel:+528115450426">Celular: 81 15 45 04 26</a></h6>
+                            </div>
+                        </div>
+                        <div class="rs-contact-list-item">
+                            <div class="rs-contact-list-content"><span>Correo</span>
+                                <h6><a href="mailto:proyectos@desaingenieria.com">proyectos@desaingenieria.com</a></h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -454,11 +587,21 @@
                     <form action="<?= base_url('/') ?>" method="post">
                         <?= csrf_field() ?>
                         <div class="row g-4">
-                            <div class="col-md-12"><div class="rs-contact-input"><input name="nombre" type="text" placeholder="Nombre completo" value="<?= old('nombre') ?>" required><?php if (isset($validation) && $validation->hasError('nombre')): ?><small class="text-danger"><?= esc($validation->getError('nombre')) ?></small><?php endif; ?></div></div>
-                            <div class="col-md-12"><div class="rs-contact-input"><input name="email" type="email" placeholder="Correo electrónico" value="<?= old('email') ?>" required><?php if (isset($validation) && $validation->hasError('email')): ?><small class="text-danger"><?= esc($validation->getError('email')) ?></small><?php endif; ?></div></div>
-                            <div class="col-md-12"><div class="rs-contact-input"><input name="telefono" type="text" placeholder="Teléfono" value="<?= old('telefono') ?>" required><?php if (isset($validation) && $validation->hasError('telefono')): ?><small class="text-danger"><?= esc($validation->getError('telefono')) ?></small><?php endif; ?></div></div>
-                            <div class="col-md-12"><div class="rs-contact-input"><textarea name="mensaje" placeholder="Descripción del proyecto" required><?= old('mensaje') ?></textarea><?php if (isset($validation) && $validation->hasError('mensaje')): ?><small class="text-danger"><?= esc($validation->getError('mensaje')) ?></small><?php endif; ?></div></div>
-                            <div class="col-md-12"><div class="rs-contact-btn"><button type="submit" class="rs-btn black-bg">Enviar mensaje</button></div></div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input"><input name="nombre" type="text" placeholder="Nombre completo" value="<?= old('nombre') ?>" required><?php if (isset($validation) && $validation->hasError('nombre')): ?><small class="text-danger"><?= esc($validation->getError('nombre')) ?></small><?php endif; ?></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input"><input name="email" type="email" placeholder="Correo electrónico" value="<?= old('email') ?>" required><?php if (isset($validation) && $validation->hasError('email')): ?><small class="text-danger"><?= esc($validation->getError('email')) ?></small><?php endif; ?></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input"><input name="telefono" type="text" placeholder="Teléfono" value="<?= old('telefono') ?>" required><?php if (isset($validation) && $validation->hasError('telefono')): ?><small class="text-danger"><?= esc($validation->getError('telefono')) ?></small><?php endif; ?></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-input"><textarea name="mensaje" placeholder="Descripción del proyecto" required><?= old('mensaje') ?></textarea><?php if (isset($validation) && $validation->hasError('mensaje')): ?><small class="text-danger"><?= esc($validation->getError('mensaje')) ?></small><?php endif; ?></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="rs-contact-btn"><button type="submit" class="rs-btn black-bg">Enviar mensaje</button></div>
+                            </div>
                         </div>
                     </form>
                 </div>
