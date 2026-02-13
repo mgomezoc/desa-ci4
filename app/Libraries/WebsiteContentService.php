@@ -94,8 +94,6 @@ class WebsiteContentService
 
         $galleryImages = $this->extractProjectGalleryImages($project);
         $project['primary_image'] = $project['cover_image'] ?: ($galleryImages[0] ?? null);
-        $project['primary_image_url'] = $this->resolveProjectImageUrl($project['primary_image']);
-        $project['gallery_image_urls'] = $this->resolveProjectImageUrls($galleryImages);
 
         $technologies = $this->db->table('project_technologies pt')
             ->select('t.name, t.slug, t.logo_path, t.website_url')
@@ -132,7 +130,6 @@ class WebsiteContentService
         foreach ($relatedProjects as &$relatedProject) {
             $relatedGallery = $this->extractProjectGalleryImages($relatedProject);
             $relatedProject['primary_image'] = $relatedProject['cover_image'] ?: ($relatedGallery[0] ?? null);
-            $relatedProject['primary_image_url'] = $this->resolveProjectImageUrl($relatedProject['primary_image']);
         }
 
         return [
@@ -173,7 +170,6 @@ class WebsiteContentService
         foreach ($projects as &$project) {
             $galleryImages = $this->extractProjectGalleryImages($project);
             $project['primary_image'] = $project['cover_image'] ?: ($galleryImages[0] ?? null);
-            $project['primary_image_url'] = $this->resolveProjectImageUrl($project['primary_image']);
         }
 
         return $projects;
@@ -198,34 +194,5 @@ class WebsiteContentService
         }
 
         return array_values(array_filter($galleryImages, static fn ($imagePath): bool => is_string($imagePath) && $imagePath !== ''));
-    }
-
-    private function resolveProjectImageUrls(array $imagePaths): array
-    {
-        $urls = [];
-
-        foreach ($imagePaths as $imagePath) {
-            $urls[] = $this->resolveProjectImageUrl($imagePath);
-        }
-
-        return array_values(array_filter($urls, static fn (?string $url): bool => is_string($url) && $url !== ''));
-    }
-
-    private function resolveProjectImageUrl(?string $imagePath): ?string
-    {
-        if (! is_string($imagePath) || $imagePath === '') {
-            return null;
-        }
-
-        if (! str_starts_with($imagePath, 'assets/images/proyectos/')) {
-            return base_url($imagePath);
-        }
-
-        return base_url('media/project-image/' . $this->encodeImagePath($imagePath));
-    }
-
-    private function encodeImagePath(string $path): string
-    {
-        return rtrim(strtr(base64_encode($path), '+/', '-_'), '=');
     }
 }

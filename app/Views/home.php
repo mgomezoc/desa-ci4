@@ -530,14 +530,14 @@
                                 <div class="swiper-wrapper">
                                     <?php foreach (($home_projects ?? []) as $project): ?>
                                         <?php
-                                        $image = $project['primary_image_url'] ?? base_url('assets/images/portfolio/portfolio-thumb-41.png');
+                                        $image = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png';
                                         // Generamos el link correcto para usarlo en la imagen, título y botón
                                         $link = base_url('proyectos/' . $project['slug']);
                                         ?>
                                         <div class="swiper-slide">
                                             <div class="rs-portfolio-item">
                                                 <div class="rs-portfolio-thumb">
-                                                    <img src="<?= esc($image, 'attr') ?>" alt="<?= esc($project['name']) ?>">
+                                                    <img src="<?= base_url($image) ?>" alt="<?= esc($project['name']) ?>">
                                                 </div>
                                                 <div class="rs-portfolio-content">
                                                     <div class="rs-portfolio-tag">
