@@ -5,6 +5,7 @@
 Archivos SQL de referencia:
 - Archivo único recomendado: `contexto/desa_db_full_setup.sql`
 - Alternativa legacy: `contexto/desa_multipage_seed_v2.sql` + `contexto/geo_update.sql`
+- Normalización de rutas de imágenes legacy: `contexto/project_images_rename_update.sql`
 
 ### Tablas core
 - `pages`
