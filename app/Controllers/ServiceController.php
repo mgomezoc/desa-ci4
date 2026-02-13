@@ -29,6 +29,7 @@ class ServiceController extends BaseController
             'technologies' => $payload['technologies'],
             'faqs'         => $payload['faqs'] ?? [],
             'seo'          => $payload['seo'] ?? [],
+            'services'     => $this->contentService->getServices(),
         ];
 
         return view('service_detail', $data);
