@@ -28,6 +28,52 @@
         object-fit: cover;
         display: block;
     }
+
+    @media (max-width: 767px) {
+        #inicio .rs-banner-item-wrapper {
+            min-height: calc(100svh - 80px);
+            padding: 120px 0 90px;
+        }
+
+        #inicio .rs-banner-title {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+
+        #inicio .rs-banner-descrip {
+            margin: 0 0 28px;
+            max-width: 100%;
+        }
+
+        #inicio .rs-banner-descrip p {
+            font-size: 16px;
+            line-height: 1.55;
+        }
+
+        #inicio .rs-banner-btn .rs-btn {
+            min-width: 220px;
+            justify-content: center;
+        }
+
+        .rs-footer-one .rs-footer-widget-links ul {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .rs-footer-one .rs-footer-widget-links ul li a,
+        .rs-footer-one .descrip,
+        .rs-footer-one .rs-footer-copyright p {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+    }
+
+    @media (max-width: 420px) {
+        #inicio .rs-banner-title {
+            font-size: 48px;
+        }
+    }
 </style>
 <?= $this->endSection() ?>
 
