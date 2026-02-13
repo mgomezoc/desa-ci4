@@ -46,13 +46,7 @@
         rs_init_dir();
     }
 
-    /* Append settings HTML  */
-    rs_settings_append(true); /* if you want to enable dark mode, send "true" */
-
-    /* Event listeners  */
-    $(".rs-theme-settings-open-btn").on("click", function () {
-        $(".rs-theme-settings-area").toggleClass("settings-opened");
-    });
+    
 
     /* Initialize RTL settings if the element is present  */
     if ($("#rs-dir-toggler").length > 0) {

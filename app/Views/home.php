@@ -402,40 +402,24 @@
         <div class="row g-5 process-counts">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".3s">
-                    <div class="rs-work-step-number-wrapper">
-                        <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text"></span>
-                    </div>
                     <h5 class="rs-work-step-title">Objetivos y filosofía</h5>
                     <p class="descrip">Crecimiento ordenado con mejora continua y enfoque en tiempo, costo y calidad.</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".5s">
-                    <div class="rs-work-step-number-wrapper">
-                        <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text"></span>
-                    </div>
                     <h5 class="rs-work-step-title">Especificaciones y normas</h5>
                     <p class="descrip">Diseños alineados con normas nacionales e internacionales aplicables.</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".7s">
-                    <div class="rs-work-step-number-wrapper">
-                        <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text"></span>
-                    </div>
                     <h5 class="rs-work-step-title">Tecnología aplicada</h5>
                     <p class="descrip">Uso de CYPE CAD, TEKLA, Revit, STAAD Pro, ETABS y AutoCAD en cada proyecto.</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="rs-work-step-item wow fadeIn" data-wow-delay=".9s">
-                    <div class="rs-work-step-number-wrapper">
-                        <span class="rs-work-step-number"></span>
-                        <span class="rs-work-step-text"></span>
-                    </div>
                     <h5 class="rs-work-step-title">Entrega y seguimiento</h5>
                     <p class="descrip">Entrega técnica del proyecto con acompañamiento para implementación en obra.</p>
                 </div>
@@ -446,49 +430,122 @@
 
 <section id="proyectos" class="rs-portfolio-area section-space-top rs-portfolio-one rs-swiper">
     <div class="container">
-        <div class="row g-5 section-title-space align-items-end">
-            <div class="col-xxl-7 col-xl-8 col-lg-8">
-                <div class="rs-section-title-wrapper">
-                    <?php foreach (($home_projects ?? []) as $index => $project): ?>
-                        <?php $thumbClass = ($index === 0) ? 'rs-portfolio-thumb' : 'rs-portfolio-thumb has-clip-path'; ?>
-                        <div class="<?= $thumbClass ?>">
+        <!-- portfolio area start -->
+        <section class="rs-portfolio-area section-space-top rs-portfolio-one rs-swiper">
+            <div class="container">
+                <div class="row  g-5 section-title-space align-items-end">
+                    <div class="col-xxl-7 col-xl-8 col-lg-8">
+                        <div class="rs-section-title-wrapper">
+                            <span class="rs-section-subtitle has-theme-orange justify-content-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
+                                    fill="none">
+                                    <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
+                                        fill="#EA5501"></path>
+                                </svg>
+                                Proyectos
+                            </span>
+                            <h2 class="rs-section-title">Portafolio de Proyectos</h2>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
+                    <div class="col-xxl-5 col-xl-4 col-lg-4">
+                        <!-- If we need navigation buttons -->
+                        <div class=" rs-portfolio-navigation">
+                            <button class="swiper-button-prev rs-swiper-btn has-bg-light"><i
+                                    class="fa-regular fa-arrow-left"></i></button>
+                            <button class="swiper-button-next rs-swiper-btn has-bg-light"><i
+                                    class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xxl-5 col-xl-4 col-lg-4">
-                <div class="rs-portfolio-navigation">
-                    <button class="swiper-button-prev rs-swiper-btn has-bg-light"><i class="fa-regular fa-arrow-left"></i></button>
-                    <button class="swiper-button-next rs-swiper-btn has-bg-light"><i class="fa-regular fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="rs-portfolio-slider-wrapper">
+                            <div class="swiper has-space" data-clone-slides="false" data-loop="true" data-speed="1500"
+                                data-autoplay="true" data-dots-dynamic="false" data-hover-pause="true"
+                                data-effect="false" data-delay="2500" data-item="4" data-item-xl="3" data-item-lg="3"
+                                data-item-md="2" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30"
+                                data-margin-xl="30">
+                                <div class="swiper-wrapper">
+                                    <?php foreach (($home_projects ?? []) as $project): ?>
+                                        <?php
+                                        $image = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png';
+                                        // Generamos el link correcto para usarlo en la imagen, título y botón
+                                        $link = base_url('proyectos/' . $project['slug']);
+                                        ?>
+                                        <div class="swiper-slide">
+                                            <div class="rs-portfolio-item">
+                                                <div class="rs-portfolio-thumb">
+                                                    <img src="<?= base_url($image) ?>" alt="<?= esc($project['name']) ?>">
+                                                </div>
+                                                <div class="rs-portfolio-content">
+                                                    <div class="rs-portfolio-tag">
+                                                        <a href="<?= $link ?>"><?= esc($project['client_name'] ?? 'DESA Ingeniería') ?></a>
+                                                    </div>
+                                                    <h4 class="rs-portfolio-title underline has-white">
+                                                        <a href="<?= $link ?>"><?= esc($project['name']) ?></a>
+                                                    </h4>
+                                                    <p class="text-white-50"><?= esc($project['short_description'] ?? 'Proyecto de ingeniería desarrollado por DESA Ingeniería.') ?></p>
 
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="rs-portfolio-slider-wrapper">
-                    <div class="swiper has-space" data-loop="true" data-speed="1500" data-autoplay="true" data-hover-pause="true" data-delay="2500" data-item="4" data-item-xl="3" data-item-lg="3" data-item-md="2" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30">
-                        <div class="swiper-wrapper">
-                            <?php foreach (($home_projects ?? []) as $project): ?>
-                                <?php $image = $project['primary_image'] ?: 'assets/images/portfolio/portfolio-thumb-41.png'; ?>
-                                <div class="swiper-slide">
-                                    <div class="rs-portfolio-item">
-                                        <div class="rs-portfolio-thumb">
-                                            <img src="<?= base_url($image) ?>" alt="<?= esc($project['name']) ?>">
+                                                    <div class="rs-portfolio-btn">
+                                                        <a href="<?= $link ?>" class="rs-btn has-theme-orange has-circle has-icon">
+                                                            <span class="icon-box">
+                                                                <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                                </svg>
+                                                                <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="rs-portfolio-content">
-                                            <div class="rs-portfolio-tag"><span><?= esc($project['client_name'] ?? 'DESA Ingeniería') ?></span></div>
-                                            <h4 class="rs-portfolio-title underline has-white"><?= esc($project['name']) ?></h4>
-                                            <p class="text-white-50"><?= esc($project['short_description'] ?? 'Proyecto de ingeniería desarrollado por DESA Ingeniería.') ?></p>
+                                    <?php endforeach; ?>
+                                    <div class="swiper-slide">
+                                        <div class="rs-portfolio-item">
+                                            <div class="rs-portfolio-thumb">
+                                                <img src="assets/images/portfolio/portfolio-thumb-01.png" alt="image">
+                                            </div>
+                                            <div class="rs-portfolio-content">
+                                                <div class="rs-portfolio-tag">
+                                                    <a href="portfolio-details.html">Company</a>
+                                                </div>
+                                                <h4 class="rs-portfolio-title underline has-white"><a
+                                                        href="portfolio-details.html">Metal
+                                                        Industry</a></h4>
+                                                <div class="rs-portfolio-btn">
+                                                    <a href="portfolio-details.html"
+                                                        class="rs-btn has-theme-orange has-circle has-icon">
+                                                        <span class="icon-box">
+                                                            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 32 32">
+                                                                <path
+                                                                    d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 32 32">
+                                                                <path
+                                                                    d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            <?php endforeach; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- portfolio area end -->
     </div>
 </section>
 
@@ -510,19 +567,14 @@
                         <div class="swiper-wrapper">
                             <?php
                             $clientes = [
-                                ['brand-thumb-02.png', 'PAGA Desarrollos'],
-                                ['brand-thumb-03.png', 'Pastelería Lety'],
-                                ['brand-thumb-04.png', 'Valmont'],
-                                ['brand-thumb-05.png', 'KIA'],
-                                ['brand-thumb-06.png', 'VYNMSA'],
-                                ['brand-thumb-07.png', 'Metalsa'],
-                                ['brand-thumb-08.png', 'Carza'],
-                                ['brand-thumb-09.png', 'U-ERRE'],
-                                ['brand-thumb-10.png', 'Azcunaga Arquitectos'],
-                                ['brand-thumb-11.png', 'AD Arquitectos'],
-                                ['brand-thumb-12.png', 'HW Proyectos'],
-                                ['brand-thumb-13.png', 'Younchang'],
-                                ['brand-thumb-14.png', 'SIE Industrial'],
+                                ['brand-1.png', 'ASCE'],
+                                ['brand-2.png', 'Logo'],
+                                ['brand-3.png', 'AISI'],
+                                ['brand-4.png', 'Azcunaga Arquitectos'],
+                                ['brand-5.png', 'HW'],
+                                ['brand-6.jpg', 'AD'],
+                                ['brand-7.jpg', 'Metalsa'],
+                                ['brand-8.png', 'Youngchang'],
                             ];
                             ?>
                             <?php foreach ($clientes as [$logo, $nombre]): ?>
